@@ -1,0 +1,516 @@
+<!doctype html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="description" content="Guía gratis: tu jubilación en una sola hoja de papel. Cuatro números, una lista y la libreta de 30 días, con la regla de Carlos Slim. Del canal @MenosCosasMásDinero.">
+<link rel="canonical" href="https://menoscosasmasdinero.com/retiro/">
+<meta property="og:title" content="Tu retiro en una hoja">
+<meta property="og:description" content="Guía gratis del canal Menos cosas, más dinero: si tu jubilación no cabe en una hoja, no la entiendes.">
+<meta property="og:url" content="https://menoscosasmasdinero.com/retiro/">
+<link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>📄</text></svg>">
+<title>Tu retiro en una hoja</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,400;0,9..144,500;0,9..144,600;1,9..144,400;1,9..144,500&family=Instrument+Sans:ital,wght@0,400;0,500;0,600;1,400&display=swap">
+<style>
+  :root{
+    --paper:#FBFAF6;
+    --panel:#FFFFFF;
+    --mint:#EAF3F0;
+    --mint-line:#CFE4DD;
+    --ink:#17211F;
+    --ink-soft:#3D4A47;
+    --muted:#66756F;
+    --faint:#8A968F;
+    --accent:#0E7C6B;
+    --accent-deep:#0A5B4F;
+    --accent-soft:#D8ECE6;
+    --line:#E6E3DA;
+    --line-strong:#D6D2C6;
+    --danger:#B4532B;
+    --sheet:#FFFDF7;
+    --sheet-line:#E3DDCB;
+    --shadow:0 1px 2px rgba(20,40,35,.04),0 8px 30px rgba(20,40,35,.06);
+    --shadow-soft:0 1px 2px rgba(20,40,35,.03);
+  }
+  @media (prefers-color-scheme:dark){
+    :root:not([data-theme="light"]){
+      --paper:#0F1512;
+      --panel:#161E1B;
+      --mint:#152420;
+      --mint-line:#264a41;
+      --ink:#ECF1EE;
+      --ink-soft:#C4CFCA;
+      --muted:#93A29B;
+      --faint:#6F7E77;
+      --accent:#3FBBA3;
+      --accent-deep:#5ED3BB;
+      --accent-soft:#183630;
+      --line:#26302C;
+      --line-strong:#33403A;
+      --danger:#E4966F;
+      --sheet:#1B221E;
+      --sheet-line:#2E3934;
+      --shadow:0 1px 2px rgba(0,0,0,.3),0 10px 34px rgba(0,0,0,.4);
+      --shadow-soft:0 1px 2px rgba(0,0,0,.25);
+    }
+  }
+  :root[data-theme="dark"]{
+    --paper:#0F1512;
+    --panel:#161E1B;
+    --mint:#152420;
+    --mint-line:#264a41;
+    --ink:#ECF1EE;
+    --ink-soft:#C4CFCA;
+    --muted:#93A29B;
+    --faint:#6F7E77;
+    --accent:#3FBBA3;
+    --accent-deep:#5ED3BB;
+    --accent-soft:#183630;
+    --line:#26302C;
+    --line-strong:#33403A;
+    --danger:#E4966F;
+    --sheet:#1B221E;
+    --sheet-line:#2E3934;
+    --shadow:0 1px 2px rgba(0,0,0,.3),0 10px 34px rgba(0,0,0,.4);
+    --shadow-soft:0 1px 2px rgba(0,0,0,.25);
+  }
+
+  *{box-sizing:border-box}
+  html{-webkit-text-size-adjust:100%}
+  body{
+    margin:0;
+    background:var(--paper);
+    color:var(--ink);
+    font-family:"Instrument Sans",-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif;
+    font-size:17px;
+    line-height:1.6;
+    -webkit-font-smoothing:antialiased;
+    text-rendering:optimizeLegibility;
+  }
+  .wrap{max-width:660px;margin:0 auto;padding:0 28px}
+
+  header.brand{border-bottom:1px solid var(--line);background:var(--paper)}
+  .brand-row{display:flex;align-items:baseline;justify-content:space-between;gap:14px;padding:20px 0 18px}
+  .wordmark{font-family:"Fraunces",Georgia,serif;font-style:italic;font-weight:500;font-size:22px;color:var(--ink);letter-spacing:.2px;line-height:1}
+  .handle{font-size:11px;letter-spacing:.14em;text-transform:uppercase;color:var(--accent);font-weight:600;white-space:nowrap}
+
+  .hero{padding:44px 0 8px}
+  .eyebrow{
+    display:inline-block;font-size:12px;letter-spacing:.2em;text-transform:uppercase;font-weight:600;
+    color:var(--accent);padding:6px 12px;border:1px solid var(--accent-soft);border-radius:100px;background:var(--accent-soft);
+  }
+  h1{
+    font-family:"Fraunces",Georgia,serif;font-weight:600;font-optical-sizing:auto;
+    font-size:clamp(40px,11vw,62px);line-height:1.02;letter-spacing:-.015em;
+    margin:20px 0 0;text-wrap:balance;color:var(--ink);
+  }
+  .lede{font-size:clamp(17px,4.6vw,20px);color:var(--ink-soft);line-height:1.5;margin:20px 0 0;max-width:36ch}
+  .lede em{font-style:italic;color:var(--accent-deep)}
+
+  .rule{height:1px;background:var(--line);border:0;margin:40px 0}
+
+  .sec-h{display:flex;align-items:center;gap:14px;margin:0 0 18px}
+  .sec-h .tick{width:26px;height:3px;border-radius:2px;background:var(--accent);flex:none}
+  .sec-h h2{font-family:"Fraunces",Georgia,serif;font-weight:600;font-size:clamp(23px,6vw,28px);letter-spacing:-.01em;margin:0;line-height:1.15}
+
+  p{margin:0 0 18px}
+  .body p strong{font-weight:600;color:var(--ink)}
+  .hl{color:var(--danger);font-weight:600}
+
+  blockquote{
+    margin:26px 0;padding:2px 0 2px 20px;border-left:3px solid var(--accent);
+    font-family:"Fraunces",Georgia,serif;font-style:italic;font-size:19px;line-height:1.45;color:var(--ink);
+  }
+  blockquote cite{display:block;font-style:normal;font-family:"Instrument Sans",sans-serif;font-size:13px;color:var(--muted);margin-top:8px;letter-spacing:.02em}
+
+  .rule-card{
+    background:var(--accent);color:#fff;border-radius:20px;padding:30px 26px;margin:8px 0 6px;
+    box-shadow:var(--shadow);position:relative;overflow:hidden;
+  }
+  .rule-card .rlbl{font-size:12px;letter-spacing:.2em;text-transform:uppercase;font-weight:600;color:rgba(255,255,255,.72);margin-bottom:12px}
+  .rule-card .rq{font-family:"Fraunces",Georgia,serif;font-weight:500;font-size:clamp(23px,6.2vw,30px);line-height:1.22;margin:0 0 14px;text-wrap:balance}
+  .rule-card .rq b{font-weight:600;text-decoration:underline;text-decoration-color:rgba(255,255,255,.5);text-underline-offset:4px}
+  .rule-card .rsub{font-size:15.5px;color:rgba(255,255,255,.88);margin:0;line-height:1.5}
+
+  .tool-intro{color:var(--muted);font-size:15.5px;margin:-4px 0 22px}
+
+  /* La hoja */
+  .sheet{
+    background:var(--sheet);border:1px solid var(--sheet-line);border-radius:6px;
+    padding:26px 22px 22px;box-shadow:var(--shadow);
+    background-image:repeating-linear-gradient(transparent 0 35px,var(--sheet-line) 35px 36px);
+    background-size:100% 36px;background-position:0 14px;
+  }
+  .sheet-title{
+    font-family:"Fraunces",Georgia,serif;font-style:italic;font-weight:500;font-size:20px;
+    color:var(--muted);margin:0 0 20px;display:flex;justify-content:space-between;align-items:baseline;gap:12px;
+  }
+  .sheet-title small{font-family:"Instrument Sans",sans-serif;font-style:normal;font-size:12px;letter-spacing:.14em;text-transform:uppercase;color:var(--faint)}
+  .row{display:grid;grid-template-columns:1fr auto;gap:10px 14px;align-items:center;padding:10px 0}
+  .row + .row{border-top:1px dashed var(--sheet-line)}
+  .row .lbl{font-weight:600;font-size:16px;line-height:1.35;color:var(--ink)}
+  .row .hint{display:block;font-weight:400;font-size:13.5px;color:var(--muted);margin-top:3px;line-height:1.4}
+  .num{display:inline-flex;align-items:center;gap:6px;border:1px solid var(--line-strong);border-radius:10px;background:var(--panel);padding:2px 10px 2px 4px}
+  .num input{border:0;background:transparent;width:118px;padding:9px 4px;text-align:right;font-weight:600;font-size:18px;color:var(--ink);font-family:inherit;font-variant-numeric:tabular-nums}
+  .num input:focus{outline:none}
+  .num .cur{font-weight:600;color:var(--muted);font-size:13px;white-space:nowrap}
+  .num:focus-within{border-color:var(--accent);outline:2px solid var(--accent);outline-offset:1px}
+  .row.result{background:var(--mint);border:1px solid var(--mint-line);border-radius:12px;padding:14px 16px;margin:6px -6px 0;border-top-style:solid}
+  .row.result .lbl{color:var(--accent-deep)}
+  .big{font-family:"Fraunces",Georgia,serif;font-weight:600;font-size:clamp(24px,7vw,32px);line-height:1;color:var(--accent-deep);font-variant-numeric:tabular-nums;white-space:nowrap}
+  .big.ok{color:var(--accent)}
+  .big.warn{color:var(--danger)}
+  .row.result .hint{color:var(--ink-soft)}
+  ::placeholder{color:var(--faint)}
+  @media (max-width:420px){
+    .row{grid-template-columns:1fr}
+    .row .num,.row .big{justify-self:start}
+  }
+
+  /* Lista de recortes */
+  .cuts{display:grid;gap:10px;margin-top:6px}
+  .cut{display:grid;grid-template-columns:auto 1fr auto;gap:10px;align-items:center}
+  .cut .n{flex:none;width:26px;height:26px;border-radius:50%;background:var(--accent);color:#fff;font-weight:600;font-size:13px;display:flex;align-items:center;justify-content:center}
+  .cut input[type=text]{border:0;border-bottom:1px solid var(--line-strong);border-radius:0;background:transparent;padding:8px 2px;font-size:15.5px;color:var(--ink);font-family:inherit;min-width:0}
+  .cut input[type=text]:focus{outline:none;border-bottom-color:var(--accent)}
+  .cut .num input{width:84px;font-size:16px}
+  .cuts-total{display:flex;justify-content:space-between;align-items:baseline;gap:12px;margin-top:14px;padding-top:12px;border-top:1px solid var(--line);font-size:15px;color:var(--ink-soft)}
+  .cuts-total b{font-family:"Fraunces",Georgia,serif;font-size:24px;color:var(--accent-deep);font-variant-numeric:tabular-nums}
+  .cuts-note{font-size:14px;color:var(--muted);margin:10px 0 0;line-height:1.5}
+
+  .challenge{background:var(--mint);border:1px solid var(--mint-line);border-radius:20px;padding:26px 22px;margin:8px 0 0}
+  .challenge h3{font-family:"Fraunces",Georgia,serif;font-weight:600;font-size:22px;margin:0 0 8px;color:var(--ink)}
+  .challenge .cintro{color:var(--muted);font-size:14.5px;margin:0 0 18px;line-height:1.5}
+  .weeks{display:grid;gap:10px}
+  .wk{display:flex;align-items:center;gap:12px}
+  .wk .dlbl{flex:none;width:34px;font-weight:600;font-size:13px;color:var(--accent-deep);letter-spacing:.02em}
+  .wk input[type=checkbox]{position:absolute;opacity:0;width:0;height:0}
+  .wk .box{flex:none;width:22px;height:22px;border-radius:6px;border:2px solid var(--mint-line);background:var(--panel);display:flex;align-items:center;justify-content:center;cursor:pointer;transition:all .15s}
+  .wk .box svg{width:13px;height:13px;stroke:#fff;stroke-width:3;fill:none;opacity:0;transition:opacity .15s}
+  .wk:has(input:checked) .box{background:var(--accent);border-color:var(--accent)}
+  .wk:has(input:checked) .box svg{opacity:1}
+  .wk:has(input:focus-visible) .box{outline:2px solid var(--accent);outline-offset:2px}
+  .wk input[type=text]{flex:1;border:0;border-bottom:1px solid var(--mint-line);border-radius:0;background:transparent;padding:8px 2px;font-size:15px;color:var(--ink);font-family:inherit;min-width:0}
+  .wk input[type=text]:focus{outline:none;border-bottom-color:var(--accent)}
+
+  .saved-note{display:flex;align-items:center;gap:8px;justify-content:center;font-size:13px;color:var(--faint);margin:18px 0 0;text-align:center}
+  .saved-note svg{width:14px;height:14px;stroke:var(--faint);fill:none;stroke-width:2}
+  .fine{font-size:13.5px;color:var(--faint);line-height:1.5;margin:14px 0 0}
+
+  footer{margin-top:8px;border-top:1px solid var(--line);background:var(--paper)}
+  .foot-in{padding:44px 0 20px;text-align:center}
+  .foot-mark{font-family:"Fraunces",Georgia,serif;font-weight:600;font-size:26px;margin:0 0 8px;color:var(--ink)}
+  .foot-mark span{color:var(--accent)}
+  .foot-txt{color:var(--ink-soft);font-size:16px;max-width:38ch;margin:0 auto 22px;line-height:1.5}
+  .yt{display:inline-flex;align-items:center;gap:11px;background:var(--ink);color:var(--paper);text-decoration:none;font-weight:600;font-size:16px;padding:15px 26px;border-radius:100px;box-shadow:var(--shadow);transition:transform .15s}
+  .yt:hover{transform:translateY(-1px)}
+  .yt svg{width:22px;height:22px;fill:#FF0033}
+  .yt .ytbg{fill:var(--paper)}
+  .foot-fine{color:var(--faint);font-size:13px;margin:26px auto 0;max-width:40ch;line-height:1.5}
+  .foot-fine b{color:var(--accent);font-weight:600;letter-spacing:.04em}
+  .foot-fine a{color:var(--muted)}
+
+  .share-top{display:flex;align-items:center;gap:9px;flex-wrap:wrap;margin:24px 0 0}
+  .st-lbl{font-size:14px;color:var(--muted);font-weight:600}
+  .sbtn-sm{display:inline-flex;align-items:center;gap:7px;font-family:inherit;font-weight:600;font-size:14px;cursor:pointer;padding:9px 15px;border-radius:100px;text-decoration:none;border:1px solid var(--line-strong);background:var(--panel);color:var(--ink-soft);transition:transform .15s}
+  .sbtn-sm:hover{transform:translateY(-1px)}
+  .sbtn-sm svg{width:16px;height:16px;flex:none}
+  .sbtn-sm.wa{background:#25D366;color:#08331b;border-color:transparent}
+  .sbtn-sm.wa svg{fill:#08331b}
+  .sbtn-sm.more svg{fill:none;stroke:currentColor;stroke-width:2}
+
+  .share{text-align:center;margin:34px 0 4px;padding:28px 22px;background:var(--panel);border:1px solid var(--line);border-radius:20px;box-shadow:var(--shadow-soft)}
+  .share h3{font-family:"Fraunces",Georgia,serif;font-weight:600;font-size:21px;margin:0 0 6px;color:var(--ink)}
+  .share p{color:var(--muted);font-size:15px;margin:0 0 18px;line-height:1.5}
+  .share-btns{display:flex;gap:10px;justify-content:center;flex-wrap:wrap}
+  .sbtn{display:inline-flex;align-items:center;gap:9px;cursor:pointer;font-family:inherit;font-weight:600;font-size:15.5px;text-decoration:none;padding:13px 20px;border-radius:100px;border:1px solid transparent;transition:transform .15s,background .15s}
+  .sbtn:hover{transform:translateY(-1px)}
+  .sbtn svg{width:19px;height:19px;flex:none}
+  .sbtn.wa{background:#25D366;color:#08331b}
+  .sbtn.wa svg{fill:#08331b}
+  .sbtn.more{background:var(--accent-soft);color:var(--accent-deep);border-color:var(--mint-line)}
+  .sbtn.more svg{fill:none;stroke:var(--accent-deep);stroke-width:2}
+
+  section{padding:6px 0}
+  .block{padding:8px 0 4px}
+  button:focus-visible,a:focus-visible{outline:2px solid var(--accent);outline-offset:2px}
+
+  @media (prefers-reduced-motion:reduce){
+    *{transition:none!important;animation:none!important}
+  }
+</style>
+</head>
+<body>
+
+<header class="brand">
+  <div class="wrap brand-row">
+    <div class="wordmark">Menos cosas, más dinero</div>
+    <div class="handle">@MenosCosasMásDinero</div>
+  </div>
+</header>
+
+<div class="wrap">
+
+  <div class="hero">
+    <span class="eyebrow">Guía gratis · La regla de Slim</span>
+    <h1>Tu retiro en una hoja</h1>
+    <p class="lede">Cuatro números y una lista. <em>Si tu jubilación no cabe en una hoja de papel, no la entiendes</em> — y lo que no entiendes, da miedo.</p>
+    <div class="share-top">
+      <span class="st-lbl">Compártela:</span>
+      <a class="sbtn-sm wa js-wa" target="_blank" rel="noopener" href="#">
+        <svg viewBox="0 0 24 24"><path d="M12.04 2C6.58 2 2.13 6.45 2.13 11.91c0 1.75.46 3.45 1.32 4.95L2 22l5.25-1.38a9.9 9.9 0 0 0 4.79 1.22h.01c5.46 0 9.9-4.45 9.9-9.91 0-2.65-1.03-5.14-2.9-7.01A9.82 9.82 0 0 0 12.04 2zm5.8 14.13c-.24.68-1.42 1.32-1.95 1.37-.5.05-.96.24-3.23-.67-2.72-1.07-4.44-3.85-4.57-4.03-.13-.18-1.09-1.45-1.09-2.77s.69-1.96.94-2.23c.24-.27.53-.34.71-.34.18 0 .35 0 .5.01.16.01.38-.06.59.45.24.58.81 2 .88 2.14.07.14.12.31.02.49-.09.18-.14.29-.27.45-.14.16-.29.36-.41.48-.14.14-.28.29-.12.56.16.27.71 1.17 1.53 1.9 1.05.94 1.94 1.23 2.21 1.37.27.14.43.12.59-.07.16-.18.68-.79.86-1.06.18-.27.36-.22.61-.13.24.09 1.55.73 1.82.86.27.14.45.2.51.31.07.11.07.64-.17 1.31z"/></svg>
+        WhatsApp
+      </a>
+      <button class="sbtn-sm more js-more" type="button">
+        <svg viewBox="0 0 24 24"><path d="M18 8a3 3 0 1 0-2.82-4H15a3 3 0 0 0 .18 1.09l-6.3 3.67a3 3 0 1 0 0 4.48l6.3 3.67A3 3 0 1 0 18 16a2.98 2.98 0 0 0-1.94.72l-6.3-3.67a3.02 3.02 0 0 0 0-2.1l6.3-3.67A2.98 2.98 0 0 0 18 8z"/></svg>
+        <span class="lbl">Otras · copiar</span>
+      </button>
+    </div>
+  </div>
+
+  <hr class="rule">
+
+  <section class="body block">
+    <div class="sec-h"><span class="tick"></span><h2>La libreta de un niño de 12 años</h2></div>
+    <p>Carlos Slim tiene más de cien mil millones de dólares y <strong>no usa computadora</strong>. Hace sus cuentas a lápiz. Su secreto empezó a los doce años: su padre le dio una libreta con dos columnas, <strong>lo que entra</strong> y <strong>lo que sale</strong>, y la revisaban juntos cada semana. Le pagaba por llevarla sin un solo tachón.</p>
+    <p>Su padre murió un año después. Él nunca dejó la libreta. Hoy dirige un imperio con la misma regla: toda la información importante <strong>tiene que caber en una hoja de papel</strong>.</p>
+
+    <blockquote>«Mantener la austeridad en tiempos de vacas gordas evita los amargos ajustes en las épocas de crisis.»<cite>Carlos Slim</cite></blockquote>
+
+    <p style="margin-bottom:0">La mayoría llegamos al retiro al revés: con muchas apps, muchas tarjetas, muchas opiniones… <span class="hl">y sin saber cuánto necesitamos al mes.</span> Esta hoja arregla eso en diez minutos.</p>
+  </section>
+
+  <section class="block" style="margin-top:30px">
+    <div class="rule-card">
+      <div class="rlbl">La regla de la hoja</div>
+      <p class="rq">Tu retiro son <b>cuatro números</b>. Si no los sabes, no tienes un plan: tienes un deseo.</p>
+      <p class="rsub">Cuánto necesitas · cuánto tendrás · el hueco · cuánto guardar cada mes. Lo demás es ruido.</p>
+    </div>
+  </section>
+
+  <hr class="rule">
+
+  <section class="block">
+    <div class="sec-h"><span class="tick"></span><h2>La hoja</h2></div>
+    <p class="tool-intro">Escribe a lápiz, sin precisión de contador: la cuenta gorda basta. Sirve en cualquier país y en cualquier moneda, porque no depende de ninguna pensión: depende de ti. <strong style="color:var(--ink-soft);font-weight:600">Se guarda solo en este teléfono.</strong></p>
+
+    <div class="sheet">
+      <p class="sheet-title">Mi retiro <small>una sola hoja</small></p>
+
+      <div class="row">
+        <div class="lbl">1 · ¿Cuánto necesito al mes para vivir tranquilo?
+          <span class="hint">Casa, comida, salud, luz, celular. Sin lujos y sin sustos. Piensa en el mes normal, no en el mes ideal.</span></div>
+        <span class="num"><input id="need" type="number" inputmode="decimal" min="0" step="1" data-save="need" placeholder="0"><span class="cur">al mes</span></span>
+      </div>
+
+      <div class="row">
+        <div class="lbl">2 · ¿Cuánto tendré al mes cuando me retire?
+          <span class="hint">Lo que te den (pensión, retiro, seguro) + lo que te dé lo que tienes (una renta, un negocio, ahorros). Si no lo sabes, pregunta esta semana: ese es el primer deber.</span></div>
+        <span class="num"><input id="have" type="number" inputmode="decimal" min="0" step="1" data-save="have" placeholder="0"><span class="cur">al mes</span></span>
+      </div>
+
+      <div class="row result">
+        <div class="lbl">3 · El hueco
+          <span class="hint" id="gapHint">Lo que necesitas menos lo que tendrás. Este número es tu retiro entero.</span></div>
+        <span class="big" id="gap">—</span>
+      </div>
+
+      <div class="row">
+        <div class="lbl">4 · ¿Cuántos años me faltan para retirarme?
+          <span class="hint">Los que sean. Con 5 también se puede.</span></div>
+        <span class="num"><input id="years" type="number" inputmode="numeric" min="0" max="60" step="1" data-save="years" placeholder="0"><span class="cur">años</span></span>
+      </div>
+
+      <div class="row result">
+        <div class="lbl">Lo que tengo que guardar cada mes
+          <span class="hint" id="saveHint">Cuenta a lápiz, como la de Slim: el hueco durante 20 años de retiro, repartido en los meses que te quedan, sin contar intereses. Si lo inviertes, saldrá menos.</span></div>
+        <span class="big" id="save">—</span>
+      </div>
+    </div>
+
+    <p class="fine">Esto no es asesoría financiera ni sustituye la información oficial de tu pensión: es una hoja para ver claro. El número exacto lo pones tú con tus papeles delante.</p>
+  </section>
+
+  <hr class="rule">
+
+  <section class="block">
+    <div class="sec-h"><span class="tick"></span><h2>Los 3 recortes de hoy</h2></div>
+    <p class="tool-intro">El hueco no se cierra ganando más: se cierra <strong style="color:var(--ink-soft);font-weight:600">necesitando menos</strong>. Apunta tres gastos de este mes que puedes cortar sin que tu vida empeore, y cuánto son.</p>
+    <div class="cuts" id="cuts"></div>
+    <div class="cuts-total"><span>Ya cerré de mi hueco:</span><b id="cutsTotal">0</b></div>
+    <p class="cuts-note" id="cutsNote">Cada peso o dólar que dejas de necesitar es un peso o dólar que no tienes que ahorrar veinte veces.</p>
+  </section>
+
+  <section class="block" style="margin-top:14px">
+    <div class="challenge">
+      <h3>La libreta de 30 días</h3>
+      <p class="cintro">Haz lo que hizo el padre de Slim: durante cuatro semanas apunta lo que entra y lo que sale, y el domingo revísalo. Marca cada semana que la revisaste y escribe lo que te sorprendió. Al mes, vuelve a la hoja de arriba: el número 1 habrá cambiado.</p>
+      <div class="weeks" id="weeks"></div>
+    </div>
+    <p class="saved-note">
+      <svg viewBox="0 0 24 24"><path d="M5 13l4 4L19 7"/></svg>
+      Todo lo que escribes se guarda en este dispositivo. Nadie más lo ve.
+    </p>
+  </section>
+
+  <div class="share">
+    <h3>Pásasela a quien la necesite</h3>
+    <p>Alguien que conoces tiene miedo del retiro porque no lo ha puesto en una hoja. Mándasela.</p>
+    <div class="share-btns">
+      <a class="sbtn wa js-wa" href="#" target="_blank" rel="noopener">
+        <svg viewBox="0 0 24 24"><path d="M12.04 2C6.58 2 2.13 6.45 2.13 11.91c0 1.75.46 3.45 1.32 4.95L2 22l5.25-1.38a9.9 9.9 0 0 0 4.79 1.22h.01c5.46 0 9.9-4.45 9.9-9.91 0-2.65-1.03-5.14-2.9-7.01A9.82 9.82 0 0 0 12.04 2zm5.8 14.13c-.24.68-1.42 1.32-1.95 1.37-.5.05-.96.24-3.23-.67-2.72-1.07-4.44-3.85-4.57-4.03-.13-.18-1.09-1.45-1.09-2.77s.69-1.96.94-2.23c.24-.27.53-.34.71-.34.18 0 .35 0 .5.01.16.01.38-.06.59.45.24.58.81 2 .88 2.14.07.14.12.31.02.49-.09.18-.14.29-.27.45-.14.16-.29.36-.41.48-.14.14-.28.29-.12.56.16.27.71 1.17 1.53 1.9 1.05.94 1.94 1.23 2.21 1.37.27.14.43.12.59-.07.16-.18.68-.79.86-1.06.18-.27.36-.22.61-.13.24.09 1.55.73 1.82.86.27.14.45.2.51.31.07.11.07.64-.17 1.31z"/></svg>
+        Compartir por WhatsApp
+      </a>
+      <button class="sbtn more js-more" type="button">
+        <svg viewBox="0 0 24 24"><path d="M18 8a3 3 0 1 0-2.82-4H15a3 3 0 0 0 .18 1.09l-6.3 3.67a3 3 0 1 0 0 4.48l6.3 3.67A3 3 0 1 0 18 16a2.98 2.98 0 0 0-1.94.72l-6.3-3.67a3.02 3.02 0 0 0 0-2.1l6.3-3.67A2.98 2.98 0 0 0 18 8z"/></svg>
+        <span class="lbl">Otras apps · copiar enlace</span>
+      </button>
+    </div>
+  </div>
+
+</div>
+
+<footer>
+  <div class="wrap foot-in">
+    <p class="foot-mark">Menos cosas. <span>Más dinero.</span></p>
+    <p class="foot-txt">¿Te ha servido? Hay una idea así cada semana en YouTube. Suscríbete y llega al retiro sin miedo.</p>
+    <a class="yt" href="https://www.youtube.com/@MenosCosasMasDinero" target="_blank" rel="noopener">
+      <svg viewBox="0 0 24 24"><path d="M23 12s0-3.8-.5-5.6a2.9 2.9 0 0 0-2-2C18.7 4 12 4 12 4s-6.7 0-8.5.4a2.9 2.9 0 0 0-2 2C1 8.2 1 12 1 12s0 3.8.5 5.6a2.9 2.9 0 0 0 2 2C5.3 20 12 20 12 20s6.7 0 8.5-.4a2.9 2.9 0 0 0 2-2C23 15.8 23 12 23 12z"/><path class="ytbg" d="M9.75 15.5v-7l6 3.5-6 3.5z"/></svg>
+      Ver el canal
+    </a>
+    <p class="foot-fine">Comenta la palabra <b>RETIRO</b> en cualquier vídeo del canal y te digo dónde tienes esta hoja · También tienes la guía <a href="/guia/">Corta las compras en cadena</a> · @MenosCosasMásDinero</p>
+  </div>
+</footer>
+
+<script>
+(function(){
+  var KEY="retiro-hoja-v1";
+  var state={};
+  try{ state=JSON.parse(localStorage.getItem(KEY)||"{}")||{}; }catch(e){ state={}; }
+  function save(){ try{ localStorage.setItem(KEY, JSON.stringify(state)); }catch(e){} }
+
+  // Los 3 recortes
+  var cuts=document.getElementById("cuts");
+  for(var i=1;i<=3;i++){
+    var row=document.createElement("div");
+    row.className="cut";
+    row.innerHTML='<span class="n">'+i+'</span>'+
+      '<input type="text" data-save="cutTxt'+i+'" placeholder="Ese gasto que ya ni disfruto…" aria-label="Recorte '+i+'">'+
+      '<span class="num"><input type="number" inputmode="decimal" min="0" step="1" data-save="cutVal'+i+'" data-cut placeholder="0" aria-label="Cuánto al mes"><span class="cur">al mes</span></span>';
+    cuts.appendChild(row);
+  }
+
+  // La libreta de 30 días
+  var weeks=document.getElementById("weeks");
+  ["S1","S2","S3","S4"].forEach(function(l,i){
+    var row=document.createElement("label");
+    row.className="wk";
+    row.innerHTML='<span class="dlbl">'+l+'</span>'+
+      '<span class="box"><input type="checkbox" data-save="wk'+i+'"><svg viewBox="0 0 24 24"><path d="M5 13l4 4L19 7"/></svg></span>'+
+      '<input type="text" data-save="wtxt'+i+'" placeholder="Lo que me sorprendió esta semana…">';
+    weeks.appendChild(row);
+  });
+
+  document.querySelectorAll("[data-save]").forEach(function(el){
+    var k=el.getAttribute("data-save");
+    if(el.type==="checkbox"){
+      if(state[k]===true) el.checked=true;
+      el.addEventListener("change",function(){ state[k]=el.checked; save(); });
+    } else {
+      if(typeof state[k]==="string") el.value=state[k];
+      el.addEventListener("input",function(){ state[k]=el.value; save(); calc(); });
+    }
+  });
+
+  function n(id){ var v=parseFloat(document.getElementById(id).value); return isNaN(v)?null:v; }
+  function fmt(x){ return Math.round(x).toLocaleString("es"); }
+
+  var gapEl=document.getElementById("gap"), gapHint=document.getElementById("gapHint");
+  var saveEl=document.getElementById("save"), saveHint=document.getElementById("saveHint");
+  var totEl=document.getElementById("cutsTotal"), noteEl=document.getElementById("cutsNote");
+  var GAP_HINT=gapHint.textContent, SAVE_HINT=saveHint.textContent, NOTE=noteEl.textContent;
+
+  function calc(){
+    var need=n("need"), have=n("have"), years=n("years");
+    var cutsTotal=0;
+    document.querySelectorAll("[data-cut]").forEach(function(el){ var v=parseFloat(el.value); if(!isNaN(v)) cutsTotal+=v; });
+    totEl.textContent=fmt(cutsTotal);
+
+    var gap=null;
+    if(need!==null && have!==null){
+      gap=need-have-cutsTotal;
+      if(gap<=0){
+        gapEl.textContent="0"; gapEl.className="big ok";
+        gapHint.textContent="Cubierto. Tu trabajo ahora no es ahorrar más: es proteger lo que ya tienes y no subir el número 1.";
+      } else {
+        gapEl.textContent=fmt(gap)+" / mes"; gapEl.className="big warn";
+        gapHint.textContent=cutsTotal>0 ? "Ya con tus 3 recortes descontados. Este número es tu retiro entero." : GAP_HINT;
+      }
+    } else { gapEl.textContent="—"; gapEl.className="big"; gapHint.textContent=GAP_HINT; }
+
+    if(gap!==null && gap>0 && years!==null && years>0){
+      var monthly=(gap*12*20)/(years*12);
+      saveEl.textContent=fmt(monthly)+" / mes"; saveEl.className="big warn";
+      saveHint.textContent=SAVE_HINT;
+    } else if(gap!==null && gap<=0){
+      saveEl.textContent="0"; saveEl.className="big ok";
+      saveHint.textContent="Nada que cerrar. La libreta de abajo es para que siga así.";
+    } else if(gap!==null && gap>0 && years===0){
+      saveEl.textContent="hoy"; saveEl.className="big warn";
+      saveHint.textContent="Sin años por delante, el hueco se cierra por el otro lado: necesitando menos. Ve a los 3 recortes.";
+    } else { saveEl.textContent="—"; saveEl.className="big"; saveHint.textContent=SAVE_HINT; }
+
+    noteEl.textContent = cutsTotal>0 && need!==null && need>0
+      ? "Recortar "+fmt(cutsTotal)+" al mes es como haber ahorrado "+fmt(cutsTotal*12*20)+" para el retiro. Sin ganar un peso más."
+      : NOTE;
+  }
+  calc();
+
+  var SHARE_URL="https://menoscosasmasdinero.com/retiro/";
+  var SHARE_TEXT="📄 Guía gratis: tu retiro en una hoja — los 4 números de tu jubilación y la regla de Carlos Slim para dejar de tenerle miedo.";
+
+  document.querySelectorAll(".js-wa").forEach(function(a){
+    a.href="https://wa.me/?text="+encodeURIComponent(SHARE_TEXT+" "+SHARE_URL);
+  });
+
+  function swap(btn,msg){
+    var lbl=btn.querySelector(".lbl"); if(!lbl) return;
+    if(btn.dataset.orig===undefined) btn.dataset.orig=lbl.textContent;
+    lbl.textContent=msg;
+    setTimeout(function(){ lbl.textContent=btn.dataset.orig; },2400);
+  }
+  function copyLink(btn){
+    var ok=function(){ swap(btn,"✓ Enlace copiado"); };
+    var no=function(){ swap(btn,"Copia el enlace de arriba"); };
+    try{
+      if(navigator.clipboard&&navigator.clipboard.writeText){
+        navigator.clipboard.writeText(SHARE_URL).then(ok,fallback); return;
+      }
+    }catch(e){}
+    fallback();
+    function fallback(){
+      try{
+        var t=document.createElement("textarea");
+        t.value=SHARE_URL; t.setAttribute("readonly","");
+        t.style.position="absolute"; t.style.left="-9999px";
+        document.body.appendChild(t); t.select();
+        document.execCommand("copy"); document.body.removeChild(t); ok();
+      }catch(e){ no(); }
+    }
+  }
+  document.querySelectorAll(".js-more").forEach(function(btn){
+    btn.addEventListener("click",function(){
+      if(navigator.share){
+        navigator.share({title:"Tu retiro en una hoja",text:SHARE_TEXT,url:SHARE_URL}).catch(function(){});
+      } else {
+        copyLink(btn);
+      }
+    });
+  });
+})();
+</script>
+
+</body>
+</html>

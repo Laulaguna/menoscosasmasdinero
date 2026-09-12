@@ -1,7 +1,9 @@
 {
-  "_ayuda": "Acortador propio de menoscosasmasdinero.com. Clave = ruta corta (menoscosasmasdinero.com/CLAVE), valor = destino. Tras editar: python build.py && git add -A && git commit -m 'enlaces' && git push. Rutas reservadas (no usar): guia.",
+  "_ayuda": "Acortador propio de menoscosasmasdinero.com. Clave = ruta corta (menoscosasmasdinero.com/CLAVE), valor = destino. Tras editar: python build.py && git add -A && git commit -m 'enlaces' && git push. Rutas reservadas (no usar): guia, retiro.",
   "canal": "https://www.youtube.com/@MenosCosasMasDinero",
   "cadena": "https://menoscosasmasdinero.com/guia/",
+  "hoja": "https://menoscosasmasdinero.com/retiro/",
+  "jubilacion": "https://menoscosasmasdinero.com/retiro/",
   "suscribete": "https://www.youtube.com/@MenosCosasMasDinero?sub_confirmation=1",
   "linktree": "https://linktr.ee/MenosCosasMasDinero"
 }
