@@ -1,0 +1,7 @@
+{
+  "_ayuda": "Acortador propio de menoscosasmasdinero.com. Clave = ruta corta (menoscosasmasdinero.com/CLAVE), valor = destino. Tras editar: python build.py && git add -A && git commit -m 'enlaces' && git push. Rutas reservadas (no usar): guia.",
+  "canal": "https://www.youtube.com/@MenosCosasMasDinero",
+  "cadena": "https://menoscosasmasdinero.com/guia/",
+  "suscribete": "https://www.youtube.com/@MenosCosasMasDinero?sub_confirmation=1",
+  "linktree": "https://linktr.ee/MenosCosasMasDinero"
+}
