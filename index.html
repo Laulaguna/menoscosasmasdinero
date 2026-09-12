@@ -42,9 +42,28 @@
   .card.main small{color:rgba(255,255,255,.8)}
   .foot{margin-top:44px;color:var(--muted);font-size:13.5px}
   .foot b{color:var(--accent);letter-spacing:.04em}
+
+  /* Menú de guías (común a toda la web) */
+  nav.guias{border-bottom:1px solid var(--line);background:var(--paper)}
+  nav.guias .wrap{max-width:560px;margin:0 auto;display:flex;align-items:center;gap:6px;padding:10px 28px;overflow-x:auto;scrollbar-width:none}
+  nav.guias .wrap::-webkit-scrollbar{display:none}
+  nav.guias .lbl{font-size:11px;letter-spacing:.14em;text-transform:uppercase;color:var(--muted);font-weight:600;margin-right:6px;white-space:nowrap}
+  nav.guias a{display:inline-flex;align-items:center;gap:6px;white-space:nowrap;padding:6px 12px;border-radius:999px;font-size:14px;font-weight:500;text-decoration:none;color:var(--ink-soft);border:1px solid var(--line);background:var(--panel)}
+  nav.guias a:hover{border-color:var(--accent);color:var(--ink)}
+  nav.guias a[aria-current="page"]{background:var(--accent);border-color:var(--accent);color:#fff}
+  nav.guias a:focus-visible{outline:2px solid var(--accent);outline-offset:2px}
+  .wordmark a{color:inherit;text-decoration:none}
 </style>
 </head>
 <body>
+<nav class="guias" aria-label="Guías">
+  <div class="wrap">
+    <span class="lbl">Guías</span>
+    <a href="/guia/"><span aria-hidden="true">📕</span>Corta las compras en cadena</a>
+    <a href="/retiro/"><span aria-hidden="true">📄</span>Tu retiro en una hoja</a>
+    <a href="https://www.youtube.com/@MenosCosasMasDinero" target="_blank" rel="noopener"><span aria-hidden="true">▶️</span>Canal</a>
+  </div>
+</nav>
 <div class="wrap">
   <p class="wordmark">Menos cosas, más dinero</p>
   <h1>Necesitar menos dinero <span>para vivir mejor.</span></h1>
