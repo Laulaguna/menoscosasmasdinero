@@ -3,7 +3,7 @@
 import io, json, os, shutil
 
 ROOT = os.path.dirname(os.path.abspath(__file__))
-RESERVADAS = {"guia", "retiro"}  # carpetas con contenido propio, nunca se sobrescriben
+RESERVADAS = {"guia", "retiro", "comunidad", "privacidad"}  # carpetas con contenido propio, nunca se sobrescriben
 
 PLANTILLA = """<!doctype html>
 <html lang="es">
