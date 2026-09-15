@@ -18,7 +18,8 @@
   Ajustes en un solo sitio, al final del archivo, en el <script>:
     CHECKOUT_URL  → enlace de pago (Gumroad / Hotmart / Stripe). Mientras esté vacío, los botones
                     llevan a /comunidad/ con el texto "Avísame cuando salga" (no se vende nada que no exista).
-    PRECIO        → precio en dólares (solo el número).
+    PRECIO_USD / PRECIO_EUR → precio en dólares (resto del mundo) y en euros (quien navega desde Europa,
+                    detectado por la zona horaria del navegador). Solo el número.
   Todo el texto de la guía (25 reglas, hojas, bono) es una PROPUESTA de contenido: cámbialo a lo que escribas de verdad.
 -->
 <style>
@@ -389,7 +390,7 @@
       <p class="pl">La guía</p>
       <p class="pname">El retiro tranquilo</p>
       <p class="psub">25 reglas + hojas para llenar + las historias completas. Todo en un PDF que se lee en una tarde y se usa toda la vida.</p>
-      <div class="amount"><b class="js-precio">12</b><span>dólares<br>o su equivalente en tu moneda</span></div>
+      <div class="amount"><b class="js-precio">12</b><span><span class="js-moneda">dólares</span><br>o su equivalente en tu moneda</span></div>
       <p class="once">Pago único. Sin suscripción. Actualizaciones gratis para siempre.</p>
       <ul>
         <li><svg viewBox="0 0 24 24"><path d="M5 13l4 4L19 7"/></svg><span><b>25 reglas</b> en 4 partes: gastar menos, necesitar menos, proteger lo que tienes, dejarlo atado</span></li>
@@ -537,7 +538,7 @@
       <details><summary>¿Sirve en mi país?</summary><p>Sí. La guía no explica la pensión de ningún país ni depende de ninguna ley: son reglas sobre cómo gastas, cuánto necesitas y cómo lo proteges. Las cifras las pones tú, en tu moneda.</p></details>
       <details><summary>¿Me dices en qué invertir?</summary><p>No. Aquí no se recomienda ninguna acción, banco, bróker ni producto. Hay principios (no vender en crisis, no poner todo en el mismo sitio, tener un colchón), y cada uno decide con su situación. Es educación financiera, no asesoría.</p></details>
       <details><summary>¿Qué recibo exactamente?</summary><p>Un PDF con las 25 reglas y las historias completas, y las hojas en otro PDF listo para imprimir. Los descargas al momento, nada más pagar, y te llegan también por correo.</p></details>
-      <details><summary>¿Cómo pago y en qué moneda?</summary><p>Con tarjeta o PayPal, en una plataforma de pago segura. El precio está en dólares; tu banco lo convierte a tu moneda al cambio del día.</p></details>
+      <details><summary>¿Cómo pago y en qué moneda?</summary><p>Con tarjeta, en una plataforma de pago segura (Stripe). Si estás en Europa pagas en euros; en el resto del mundo, en dólares, y tu banco lo convierte a tu moneda al cambio del día.</p></details>
       <details><summary>¿Y si la compro y no me sirve?</summary><p>Me escribes dentro de los 14 días siguientes y te devuelvo el dinero. Sin preguntas.</p></details>
       <details><summary>¿Necesito tener ahorros ya?</summary><p>No. La guía empieza por lo que gastas y lo que necesitas, no por lo que tienes. De hecho, cuanto menos tengas ahorrado, más te sirve la primera parte.</p></details>
       <details><summary>¿Es solo para mayores de 45?</summary><p>Está pensada para quien ya ve el retiro en el horizonte. Pero las reglas son las mismas a los 35: solo que a los 35 tienes más años para que jueguen a tu favor.</p></details>
@@ -576,12 +577,22 @@
 (function(){
   // ===== AJUSTES =====
   var CHECKOUT_URL = "";   // pega aquí el enlace de pago (Gumroad / Hotmart / Stripe Payment Link)
-  var PRECIO       = "12"; // en dólares, solo el número
+  var PRECIO_USD   = "12"; // dólares, solo el número (LatAm, EE. UU. y resto del mundo)
+  var PRECIO_EUR   = "11"; // euros, solo el número (quien navega desde Europa)
   // ===================
+
+  // Moneda según la zona horaria del navegador: Europa → euros; resto → dólares.
+  // Sin permisos, sin cookies, sin servidor. Si falla cualquier cosa, dólares.
+  var enEuros = false;
+  try { enEuros = /^Europe\//.test(Intl.DateTimeFormat().resolvedOptions().timeZone || ""); } catch(e){}
+  var PRECIO     = enEuros ? PRECIO_EUR : PRECIO_USD;
+  var MONEDA     = enEuros ? "euros" : "dólares";
+  var PRECIO_TXT = enEuros ? PRECIO + " €" : PRECIO + " dólares";
 
   var hay = CHECKOUT_URL.trim() !== "";
   document.querySelectorAll(".js-precio").forEach(function(el){ el.textContent = PRECIO; });
-  document.querySelectorAll(".js-precio-txt").forEach(function(el){ el.textContent = PRECIO + " dólares"; });
+  document.querySelectorAll(".js-moneda").forEach(function(el){ el.textContent = MONEDA; });
+  document.querySelectorAll(".js-precio-txt").forEach(function(el){ el.textContent = PRECIO_TXT; });
   document.querySelectorAll(".js-buy").forEach(function(a){
     if(hay){
       a.href = CHECKOUT_URL; a.target = "_blank"; a.rel = "noopener";
@@ -593,7 +604,7 @@
   });
   if(!hay){
     document.querySelectorAll(".cta-note").forEach(function(el){
-      el.innerHTML = "<b>" + PRECIO + " dólares</b> · pago único · muy pronto";
+      el.innerHTML = "<b>" + PRECIO_TXT + "</b> · pago único · muy pronto";
     });
   }
 })();
