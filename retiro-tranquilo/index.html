@@ -1,0 +1,603 @@
+<!doctype html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="description" content="El retiro tranquilo: 25 reglas y hojas para llenar a lápiz: gastar menos sin vivir peor, proteger lo que tienes y dejarlo todo bien atado. Sin depender de ninguna pensión. Del canal @MenosCosasMásDinero.">
+<link rel="canonical" href="https://menoscosasmasdinero.com/retiro-tranquilo/">
+<meta property="og:title" content="El retiro tranquilo">
+<meta property="og:description" content="Los que llegan tranquilos al retiro no ganaron más. Necesitaron menos. 25 reglas + hojas para llenar, pago único.">
+<meta property="og:url" content="https://menoscosasmasdinero.com/retiro-tranquilo/">
+<link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>🌿</text></svg>">
+<title>El retiro tranquilo</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,400;0,9..144,500;0,9..144,600;1,9..144,400;1,9..144,500&family=Instrument+Sans:ital,wght@0,400;0,500;0,600;1,400&display=swap">
+<!--
+  PÁGINA DE VENTA — "El retiro tranquilo" (modelo: mariabegue.me/frameworks-exito)
+  Ajustes en un solo sitio, al final del archivo, en el <script>:
+    CHECKOUT_URL  → enlace de pago (Gumroad / Hotmart / Stripe). Mientras esté vacío, los botones
+                    llevan a /comunidad/ con el texto "Avísame cuando salga" (no se vende nada que no exista).
+    PRECIO        → precio en dólares (solo el número).
+  Todo el texto de la guía (25 reglas, hojas, bono) es una PROPUESTA de contenido: cámbialo a lo que escribas de verdad.
+-->
+<style>
+  :root{
+    --paper:#FBFAF6;
+    --panel:#FFFFFF;
+    --mint:#EAF3F0;
+    --mint-line:#CFE4DD;
+    --ink:#17211F;
+    --ink-soft:#3D4A47;
+    --muted:#66756F;
+    --faint:#8A968F;
+    --accent:#0E7C6B;
+    --accent-deep:#0A5B4F;
+    --accent-soft:#D8ECE6;
+    --line:#E6E3DA;
+    --line-strong:#D6D2C6;
+    --danger:#B4532B;
+    --danger-soft:#F6E7DE;
+    --sheet:#FFFDF7;
+    --sheet-line:#E3DDCB;
+    --shadow:0 1px 2px rgba(20,40,35,.04),0 8px 30px rgba(20,40,35,.06);
+    --shadow-soft:0 1px 2px rgba(20,40,35,.03);
+  }
+  @media (prefers-color-scheme:dark){
+    :root:not([data-theme="light"]){
+      --paper:#0F1512;
+      --panel:#161E1B;
+      --mint:#152420;
+      --mint-line:#264a41;
+      --ink:#ECF1EE;
+      --ink-soft:#C4CFCA;
+      --muted:#93A29B;
+      --faint:#6F7E77;
+      --accent:#3FBBA3;
+      --accent-deep:#5ED3BB;
+      --accent-soft:#183630;
+      --line:#26302C;
+      --line-strong:#33403A;
+      --danger:#E4966F;
+      --danger-soft:#33241B;
+      --sheet:#1B221E;
+      --sheet-line:#2E3934;
+      --shadow:0 1px 2px rgba(0,0,0,.3),0 10px 34px rgba(0,0,0,.4);
+      --shadow-soft:0 1px 2px rgba(0,0,0,.25);
+    }
+  }
+  :root[data-theme="dark"]{
+    --paper:#0F1512;
+    --panel:#161E1B;
+    --mint:#152420;
+    --mint-line:#264a41;
+    --ink:#ECF1EE;
+    --ink-soft:#C4CFCA;
+    --muted:#93A29B;
+    --faint:#6F7E77;
+    --accent:#3FBBA3;
+    --accent-deep:#5ED3BB;
+    --accent-soft:#183630;
+    --line:#26302C;
+    --line-strong:#33403A;
+    --danger:#E4966F;
+    --danger-soft:#33241B;
+    --sheet:#1B221E;
+    --sheet-line:#2E3934;
+    --shadow:0 1px 2px rgba(0,0,0,.3),0 10px 34px rgba(0,0,0,.4);
+    --shadow-soft:0 1px 2px rgba(0,0,0,.25);
+  }
+
+  *{box-sizing:border-box}
+  html{-webkit-text-size-adjust:100%;scroll-behavior:smooth}
+  body{
+    margin:0;
+    background:var(--paper);
+    color:var(--ink);
+    font-family:"Instrument Sans",-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif;
+    font-size:17px;
+    line-height:1.6;
+    -webkit-font-smoothing:antialiased;
+    text-rendering:optimizeLegibility;
+  }
+  .wrap{max-width:660px;margin:0 auto;padding:0 28px}
+
+  header.brand{border-bottom:1px solid var(--line);background:var(--paper)}
+  .brand-row{display:flex;align-items:baseline;justify-content:space-between;gap:14px;padding:20px 0 18px}
+  .wordmark{font-family:"Fraunces",Georgia,serif;font-style:italic;font-weight:500;font-size:22px;color:var(--ink);letter-spacing:.2px;line-height:1}
+  .wordmark a{color:inherit;text-decoration:none}
+  .handle{font-size:11px;letter-spacing:.14em;text-transform:uppercase;color:var(--accent);font-weight:600;white-space:nowrap}
+
+  /* Menú de guías (común a toda la web) */
+  nav.guias{border-bottom:1px solid var(--line);background:var(--paper)}
+  nav.guias .wrap{display:flex;flex-wrap:wrap;align-items:center;justify-content:center;gap:8px;padding:10px 28px}
+  nav.guias .lbl{font-size:11px;letter-spacing:.14em;text-transform:uppercase;color:var(--muted);font-weight:600;margin-right:6px;white-space:nowrap}
+  nav.guias a{display:inline-flex;align-items:center;gap:6px;white-space:nowrap;padding:6px 12px;border-radius:999px;font-size:14px;font-weight:500;text-decoration:none;color:var(--ink-soft);border:1px solid var(--line);background:var(--panel)}
+  nav.guias a:hover{border-color:var(--accent);color:var(--ink)}
+  nav.guias a[aria-current="page"]{background:var(--accent);border-color:var(--accent);color:#fff}
+
+  .hero{padding:44px 0 8px}
+  .eyebrow{
+    display:inline-block;font-size:12px;letter-spacing:.2em;text-transform:uppercase;font-weight:600;
+    color:var(--accent);padding:6px 12px;border:1px solid var(--accent-soft);border-radius:100px;background:var(--accent-soft);
+  }
+  h1{
+    font-family:"Fraunces",Georgia,serif;font-weight:600;font-optical-sizing:auto;
+    font-size:clamp(40px,11vw,62px);line-height:1.02;letter-spacing:-.015em;
+    margin:20px 0 0;text-wrap:balance;color:var(--ink);
+  }
+  .claim{font-family:"Fraunces",Georgia,serif;font-style:italic;font-weight:500;font-size:clamp(21px,5.6vw,27px);line-height:1.25;color:var(--accent-deep);margin:18px 0 0;text-wrap:balance}
+  .lede{font-size:clamp(17px,4.6vw,20px);color:var(--ink-soft);line-height:1.5;margin:16px 0 0;max-width:40ch}
+
+  .cta-row{display:flex;flex-direction:column;align-items:flex-start;gap:10px;margin:26px 0 0}
+  .cta{
+    display:inline-flex;align-items:center;justify-content:center;gap:10px;
+    background:var(--accent);color:#fff;text-decoration:none;font-weight:600;font-size:17px;
+    padding:16px 28px;border-radius:100px;box-shadow:var(--shadow);transition:transform .15s,background .15s;
+    border:0;font-family:inherit;cursor:pointer;
+  }
+  .cta:hover{transform:translateY(-1px);background:var(--accent-deep)}
+  .cta svg{width:18px;height:18px;fill:none;stroke:currentColor;stroke-width:2.2;stroke-linecap:round;stroke-linejoin:round}
+  .cta-note{font-size:14px;color:var(--muted)}
+  .cta-note b{color:var(--ink);font-weight:600;font-variant-numeric:tabular-nums}
+
+  .rule{height:1px;background:var(--line);border:0;margin:40px 0}
+
+  .sec-h{display:flex;align-items:center;gap:14px;margin:0 0 18px}
+  .sec-h .tick{width:26px;height:3px;border-radius:2px;background:var(--accent);flex:none}
+  .sec-h h2{font-family:"Fraunces",Georgia,serif;font-weight:600;font-size:clamp(23px,6vw,28px);letter-spacing:-.01em;margin:0;line-height:1.15;text-wrap:balance}
+  .sec-intro{color:var(--muted);font-size:15.5px;margin:-4px 0 22px;line-height:1.55}
+
+  p{margin:0 0 18px}
+  .body p strong{font-weight:600;color:var(--ink)}
+  .hl{color:var(--danger);font-weight:600}
+
+  blockquote{
+    margin:26px 0;padding:2px 0 2px 20px;border-left:3px solid var(--accent);
+    font-family:"Fraunces",Georgia,serif;font-style:italic;font-size:19px;line-height:1.45;color:var(--ink);
+  }
+  blockquote cite{display:block;font-style:normal;font-family:"Instrument Sans",sans-serif;font-size:13px;color:var(--muted);margin-top:8px;letter-spacing:.02em}
+
+  /* Antes / después */
+  .ba{display:grid;grid-template-columns:1fr 1fr;gap:12px;margin-top:8px}
+  .ba > div{border-radius:18px;padding:22px 20px;border:1px solid var(--line)}
+  .ba .antes{background:var(--panel)}
+  .ba .despues{background:var(--mint);border-color:var(--mint-line)}
+  .ba .tag{font-size:11px;letter-spacing:.18em;text-transform:uppercase;font-weight:600;margin:0 0 10px}
+  .ba .antes .tag{color:var(--danger)}
+  .ba .despues .tag{color:var(--accent-deep)}
+  .ba ul{margin:0;padding:0;list-style:none;display:grid;gap:9px}
+  .ba li{font-size:15px;line-height:1.45;color:var(--ink-soft);padding-left:18px;position:relative}
+  .ba li::before{content:"";position:absolute;left:0;top:.62em;width:8px;height:8px;border-radius:50%}
+  .ba .antes li::before{background:var(--danger);opacity:.55}
+  .ba .despues li::before{background:var(--accent)}
+  .ba .despues li{color:var(--ink)}
+  @media (max-width:520px){.ba{grid-template-columns:1fr}}
+
+  /* Tarjeta de la regla */
+  .rule-card{
+    background:var(--accent);color:#fff;border-radius:20px;padding:30px 26px;margin:8px 0 6px;
+    box-shadow:var(--shadow);position:relative;overflow:hidden;
+  }
+  .rule-card .rlbl{font-size:12px;letter-spacing:.2em;text-transform:uppercase;font-weight:600;color:rgba(255,255,255,.72);margin-bottom:12px}
+  .rule-card .rq{font-family:"Fraunces",Georgia,serif;font-weight:500;font-size:clamp(23px,6.2vw,30px);line-height:1.22;margin:0 0 14px;text-wrap:balance}
+  .rule-card .rq b{font-weight:600;text-decoration:underline;text-decoration-color:rgba(255,255,255,.5);text-underline-offset:4px}
+  .rule-card .rsub{font-size:15.5px;color:rgba(255,255,255,.88);margin:0;line-height:1.5}
+
+  /* Precio */
+  .price{
+    background:var(--sheet);border:1px solid var(--sheet-line);border-radius:22px;padding:30px 26px 26px;
+    box-shadow:var(--shadow);margin-top:8px;
+  }
+  .price .pl{font-size:12px;letter-spacing:.2em;text-transform:uppercase;font-weight:600;color:var(--accent);margin:0 0 10px}
+  .price .pname{font-family:"Fraunces",Georgia,serif;font-weight:600;font-size:clamp(26px,7vw,34px);line-height:1.1;margin:0 0 6px;color:var(--ink);letter-spacing:-.01em}
+  .price .psub{color:var(--muted);font-size:15px;margin:0 0 20px;line-height:1.5}
+  .price .amount{display:flex;align-items:baseline;gap:10px;margin:0 0 4px}
+  .price .amount b{font-family:"Fraunces",Georgia,serif;font-weight:600;font-size:clamp(46px,13vw,64px);line-height:1;color:var(--accent-deep);font-variant-numeric:tabular-nums;letter-spacing:-.02em}
+  .price .amount span{font-size:15px;color:var(--muted);line-height:1.3}
+  .price .once{font-size:13.5px;color:var(--faint);margin:0 0 22px}
+  .price ul{list-style:none;margin:0 0 24px;padding:0;display:grid;gap:10px}
+  .price li{display:flex;gap:11px;align-items:flex-start;font-size:15.5px;line-height:1.45;color:var(--ink-soft)}
+  .price li svg{flex:none;width:20px;height:20px;margin-top:2px;stroke:var(--accent);fill:none;stroke-width:2.4;stroke-linecap:round;stroke-linejoin:round}
+  .price li b{color:var(--ink);font-weight:600}
+  .price .cta{width:100%}
+  .price .fine{margin-top:12px;text-align:center}
+
+  /* Para quién */
+  .who{display:grid;gap:10px;margin-top:6px}
+  .who li{list-style:none;display:flex;gap:12px;align-items:flex-start;background:var(--panel);border:1px solid var(--line);border-radius:14px;padding:14px 16px;font-size:15.5px;line-height:1.45;color:var(--ink-soft)}
+  .who{padding:0;margin:0}
+  .who li svg{flex:none;width:20px;height:20px;margin-top:2px;stroke:var(--accent);fill:none;stroke-width:2.4;stroke-linecap:round;stroke-linejoin:round}
+  .who li b{color:var(--ink);font-weight:600}
+  .not{margin:18px 0 0;padding:16px 18px;border-radius:14px;background:var(--danger-soft);border:1px solid transparent;font-size:14.5px;line-height:1.5;color:var(--ink-soft)}
+  .not b{color:var(--danger);font-weight:600}
+
+  /* Contenido */
+  .cats{display:grid;gap:14px;margin-top:6px}
+  .cat{background:var(--panel);border:1px solid var(--line);border-radius:18px;padding:20px 20px 16px;box-shadow:var(--shadow-soft)}
+  .cat-h{display:flex;align-items:baseline;justify-content:space-between;gap:12px;margin:0 0 12px}
+  .cat-h h3{font-family:"Fraunces",Georgia,serif;font-weight:600;font-size:20px;margin:0;line-height:1.2;color:var(--ink)}
+  .cat-h small{font-size:11px;letter-spacing:.14em;text-transform:uppercase;color:var(--faint);font-weight:600;white-space:nowrap}
+  .cat ol{margin:0;padding:0;list-style:none;counter-reset:regla;display:grid;gap:7px}
+  .cat li{counter-increment:regla;display:grid;grid-template-columns:30px 1fr;gap:8px;font-size:15px;line-height:1.4;color:var(--ink-soft);align-items:baseline}
+  .cat li::before{content:counter(regla,decimal-leading-zero);font-family:"Fraunces",Georgia,serif;font-weight:500;color:var(--accent);font-size:14px;font-variant-numeric:tabular-nums}
+  .cat li b{color:var(--ink);font-weight:600}
+
+  .sheets{display:grid;grid-template-columns:1fr 1fr;gap:10px;margin-top:6px}
+  .sheet-it{
+    background:var(--sheet);border:1px solid var(--sheet-line);border-radius:8px;padding:14px 14px 12px;
+    background-image:repeating-linear-gradient(transparent 0 21px,var(--sheet-line) 21px 22px);background-size:100% 22px;background-position:0 8px;
+    font-size:14.5px;line-height:1.35;color:var(--ink);font-weight:600;
+  }
+  .sheet-it small{display:block;font-weight:400;color:var(--muted);font-size:13px;margin-top:4px}
+  @media (max-width:420px){.sheets{grid-template-columns:1fr}}
+
+  .bonus{margin-top:14px;background:var(--mint);border:1px solid var(--mint-line);border-radius:18px;padding:20px 20px 18px}
+  .bonus .tag{font-size:11px;letter-spacing:.18em;text-transform:uppercase;color:var(--accent-deep);font-weight:600;margin:0 0 8px}
+  .bonus h3{font-family:"Fraunces",Georgia,serif;font-weight:600;font-size:20px;margin:0 0 8px;color:var(--ink)}
+  .bonus p{margin:0;font-size:15px;color:var(--ink-soft);line-height:1.5}
+
+  /* Comparativa */
+  .cmp-wrap{overflow-x:auto;margin-top:6px}
+  table.cmp{width:100%;border-collapse:collapse;min-width:420px;font-size:15px;line-height:1.4}
+  table.cmp th{font-size:11px;letter-spacing:.16em;text-transform:uppercase;font-weight:600;text-align:left;padding:0 12px 10px;color:var(--faint)}
+  table.cmp th.si{color:var(--accent-deep)}
+  table.cmp td{padding:12px;border-top:1px solid var(--line);vertical-align:top;color:var(--ink-soft)}
+  table.cmp td.si{background:var(--mint);color:var(--ink);font-weight:500}
+  table.cmp tr:first-child td.si{border-radius:12px 12px 0 0}
+  table.cmp tr:last-child td.si{border-radius:0 0 12px 12px}
+  table.cmp td:first-child{width:22%;font-weight:600;color:var(--ink)}
+
+  /* Quién está detrás */
+  .author{background:var(--panel);border:1px solid var(--line);border-radius:20px;padding:24px 22px;box-shadow:var(--shadow-soft);margin-top:6px}
+  .author p{font-size:16px;color:var(--ink-soft)}
+  .author p strong{color:var(--ink);font-weight:600}
+  .stats{display:grid;grid-template-columns:repeat(3,1fr);gap:10px;margin:18px 0 0}
+  .stat{border-top:2px solid var(--accent);padding:10px 0 0}
+  .stat b{display:block;font-family:"Fraunces",Georgia,serif;font-weight:600;font-size:17px;line-height:1.2;color:var(--ink);margin-bottom:4px}
+  .stat span{font-size:13px;color:var(--muted);line-height:1.4;display:block}
+  @media (max-width:480px){.stats{grid-template-columns:1fr}}
+
+  /* Preguntas */
+  .faq{display:grid;gap:8px;margin-top:6px}
+  .faq details{background:var(--panel);border:1px solid var(--line);border-radius:14px;padding:0 18px}
+  .faq summary{cursor:pointer;list-style:none;display:flex;justify-content:space-between;align-items:center;gap:14px;padding:15px 0;font-weight:600;font-size:16px;color:var(--ink)}
+  .faq summary::-webkit-details-marker{display:none}
+  .faq summary::after{content:"+";flex:none;font-family:"Fraunces",Georgia,serif;font-size:22px;color:var(--accent);line-height:1;transition:transform .2s}
+  .faq details[open] summary::after{transform:rotate(45deg)}
+  .faq details p{margin:0 0 16px;font-size:15.5px;color:var(--ink-soft);line-height:1.55}
+  .faq summary:focus-visible{outline:2px solid var(--accent);outline-offset:2px;border-radius:8px}
+
+  /* Cierre */
+  .final{text-align:center;margin:8px 0 4px;padding:34px 24px;background:var(--ink);color:var(--paper);border-radius:22px;box-shadow:var(--shadow)}
+  .final h2{font-family:"Fraunces",Georgia,serif;font-weight:600;font-size:clamp(26px,7vw,34px);margin:0 0 10px;line-height:1.1;letter-spacing:-.01em;text-wrap:balance}
+  .final p{color:var(--paper);opacity:.82;font-size:16px;max-width:38ch;margin:0 auto 22px;line-height:1.5}
+  .final .cta{background:var(--paper);color:var(--ink)}
+  .final .cta:hover{background:#fff}
+  .final .cta-note{color:var(--paper);opacity:.7;margin-top:12px;display:block}
+  .final .cta-note b{color:inherit}
+
+  .fine{font-size:13.5px;color:var(--faint);line-height:1.5;margin:14px 0 0}
+
+  footer{margin-top:8px;border-top:1px solid var(--line);background:var(--paper)}
+  .foot-in{padding:44px 0 20px;text-align:center}
+  .foot-mark{font-family:"Fraunces",Georgia,serif;font-weight:600;font-size:26px;margin:0 0 8px;color:var(--ink)}
+  .foot-mark span{color:var(--accent)}
+  .foot-txt{color:var(--ink-soft);font-size:16px;max-width:38ch;margin:0 auto 22px;line-height:1.5}
+  .yt{display:inline-flex;align-items:center;gap:11px;background:var(--ink);color:var(--paper);text-decoration:none;font-weight:600;font-size:16px;padding:15px 26px;border-radius:100px;box-shadow:var(--shadow);transition:transform .15s}
+  .yt:hover{transform:translateY(-1px)}
+  .yt svg{width:22px;height:22px;fill:#FF0033}
+  .yt .ytbg{fill:var(--paper)}
+  .foot-fine{color:var(--faint);font-size:13px;margin:26px auto 0;max-width:44ch;line-height:1.5}
+  .foot-fine a{color:var(--muted)}
+
+  section{padding:6px 0}
+  .block{padding:8px 0 4px}
+  button:focus-visible,a:focus-visible{outline:2px solid var(--accent);outline-offset:2px}
+
+  @media (prefers-reduced-motion:reduce){
+    html{scroll-behavior:auto}
+    *{transition:none!important;animation:none!important}
+  }
+</style>
+<!-- Contador de visitas (GoatCounter: sin cookies, sin datos personales) -->
+<script data-goatcounter="https://menoscosas.goatcounter.com/count" async src="//gc.zgo.at/count.js"></script>
+</head>
+<body>
+
+<header class="brand">
+  <div class="wrap brand-row">
+    <div class="wordmark"><a href="/">Menos cosas, más dinero</a></div>
+    <div class="handle">@MenosCosasMásDinero</div>
+  </div>
+</header>
+<nav class="guias" aria-label="Guías">
+  <div class="wrap">
+    <span class="lbl">Guías</span>
+    <a href="/cadena/"><span aria-hidden="true">📕</span>Corta las compras en cadena</a>
+    <a href="/retiro/"><span aria-hidden="true">📄</span>Tu retiro en una hoja</a>
+    <a href="/retiro-tranquilo/" aria-current="page"><span aria-hidden="true">🌿</span>El retiro tranquilo</a>
+    <a href="/comunidad/"><span aria-hidden="true">🤝</span>Comunidad</a>
+    <a href="https://www.youtube.com/@MenosCosasMasDinero" target="_blank" rel="noopener"><span aria-hidden="true">▶️</span>Canal de YouTube</a>
+  </div>
+</nav>
+
+<div class="wrap">
+
+  <div class="hero">
+    <span class="eyebrow">Guía completa · 25 reglas + hojas para llenar</span>
+    <h1>El retiro tranquilo</h1>
+    <p class="claim">Los que llegan tranquilos al retiro no ganaron más. Necesitaron menos.</p>
+    <p class="lede">Las reglas que usaron un mecánico, un tendero y un inversionista para vivir bien, no depender de nadie y dejarlo todo atado. Ordenadas para alguien de 45 años o más que quiere <strong>tranquilidad</strong>, no lujo.</p>
+    <div class="cta-row">
+      <a class="cta js-buy" href="#precio">
+        <span class="js-buy-txt">Quiero la guía</span>
+        <svg viewBox="0 0 24 24"><path d="M5 12h14M13 6l6 6-6 6"/></svg>
+      </a>
+      <span class="cta-note"><b class="js-precio-txt">12 dólares</b> · pago único · la descargas al momento</span>
+    </div>
+  </div>
+
+  <hr class="rule">
+
+  <section class="block">
+    <div class="sec-h"><span class="tick"></span><h2>De tener miedo a tener un plan</h2></div>
+    <div class="ba">
+      <div class="antes">
+        <p class="tag">Hoy</p>
+        <ul>
+          <li>Sabes que deberías prepararte, pero no sabes por dónde empezar.</li>
+          <li>Ganas bien y aun así el mes se va sin saber en qué.</li>
+          <li>Tienes apps, tarjetas, opiniones… y ni idea de cuánto necesitas al mes.</li>
+          <li>Si te pasara algo mañana, tu familia no sabría dónde está nada.</li>
+        </ul>
+      </div>
+      <div class="despues">
+        <p class="tag">Con la guía</p>
+        <ul>
+          <li>Sabes tu número: lo que necesitas al mes para vivir tranquilo.</li>
+          <li>Has cortado lo que no te hacía feliz y no lo echas de menos.</li>
+          <li>Lo que tienes está protegido, sin entender de bolsa ni de bancos.</li>
+          <li>Todo está en una carpeta. Tu familia sabe dónde. Duermes.</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <hr class="rule">
+
+  <section class="body block">
+    <div class="sec-h"><span class="tick"></span><h2>Qué es una regla (y por qué vale más que un consejo)</h2></div>
+    <p>Un consejo lo lees, asientes y lo olvidas. <strong>Una regla es una decisión que tomas una sola vez</strong> y que te ahorra cien decisiones después. No la piensas: la cumples.</p>
+    <p>Ronald Read trabajó de mecánico en una gasolinera y después de conserje. Tenía dos reglas: <strong>gastar menos de lo que ganaba</strong> y <strong>no vender cuando había crisis</strong>. Las cumplió sesenta años. Murió con 8 millones de dólares y nadie en su pueblo lo sabía.</p>
+    <blockquote>«No se privó de nada que le hiciera feliz. Solo se privó de aparentar.»<cite>Sobre Ronald Read · Short del canal</cite></blockquote>
+    <p style="margin-bottom:0">Esta guía son <span class="hl">25 reglas así</span>: cortas, universales y probadas por gente que llegó al retiro tranquila sin ganar más que tú. Con hojas para hacerlas tuyas a lápiz.</p>
+  </section>
+
+  <section class="block" style="margin-top:30px">
+    <div class="rule-card">
+      <div class="rlbl">La idea de toda la guía</div>
+      <p class="rq">Tu retiro no depende de <b>cuánto ganas</b>. Depende de cuánto necesitas.</p>
+      <p class="rsub">Cada gasto que dejas de necesitar es dinero que no tienes que ahorrar veinte veces. Ahí está la tranquilidad: no en ganar más, en necesitar menos.</p>
+    </div>
+  </section>
+
+  <hr class="rule">
+
+  <section class="block" id="precio">
+    <div class="price">
+      <p class="pl">La guía</p>
+      <p class="pname">El retiro tranquilo</p>
+      <p class="psub">25 reglas + hojas para llenar + las historias completas. Todo en un PDF que se lee en una tarde y se usa toda la vida.</p>
+      <div class="amount"><b class="js-precio">12</b><span>dólares<br>o su equivalente en tu moneda</span></div>
+      <p class="once">Pago único. Sin suscripción. Actualizaciones gratis para siempre.</p>
+      <ul>
+        <li><svg viewBox="0 0 24 24"><path d="M5 13l4 4L19 7"/></svg><span><b>25 reglas</b> en 4 partes: gastar menos, necesitar menos, proteger lo que tienes, dejarlo atado</span></li>
+        <li><svg viewBox="0 0 24 24"><path d="M5 13l4 4L19 7"/></svg><span><b>Hojas para imprimir</b> y llenar a lápiz, empezando por tu número</span></li>
+        <li><svg viewBox="0 0 24 24"><path d="M5 13l4 4L19 7"/></svg><span><b>Bono:</b> las historias completas de Buffett, Slim y Read, con sus fuentes</span></li>
+        <li><svg viewBox="0 0 24 24"><path d="M5 13l4 4L19 7"/></svg><span><b>Sirve en cualquier país</b>: no depende de ninguna pensión ni de ninguna ley</span></li>
+        <li><svg viewBox="0 0 24 24"><path d="M5 13l4 4L19 7"/></svg><span><b>Sin bancos ni productos:</b> nadie me paga por recomendarte nada</span></li>
+      </ul>
+      <a class="cta js-buy" href="#precio">
+        <span class="js-buy-txt">Quiero la guía</span>
+        <svg viewBox="0 0 24 24"><path d="M5 12h14M13 6l6 6-6 6"/></svg>
+      </a>
+      <p class="fine">Pago seguro con tarjeta o PayPal. Si en 14 días ves que no te sirve, me escribes y te devuelvo el dinero.</p>
+    </div>
+  </section>
+
+  <hr class="rule">
+
+  <section class="block">
+    <div class="sec-h"><span class="tick"></span><h2>Es para ti si…</h2></div>
+    <ul class="who">
+      <li><svg viewBox="0 0 24 24"><path d="M5 13l4 4L19 7"/></svg><span>Tienes <b>45 años o más</b> y el retiro dejó de ser algo lejano.</span></li>
+      <li><svg viewBox="0 0 24 24"><path d="M5 13l4 4L19 7"/></svg><span><b>No sabes cuánto necesitas al mes</b> para vivir tranquilo, y te da miedo calcularlo.</span></li>
+      <li><svg viewBox="0 0 24 24"><path d="M5 13l4 4L19 7"/></svg><span>Ganas bien, pero <b>el mes se va</b> y no sabes en qué.</span></li>
+      <li><svg viewBox="0 0 24 24"><path d="M5 13l4 4L19 7"/></svg><span>Compras cosas que no te hacen feliz <b>y lo sabes</b>.</span></li>
+      <li><svg viewBox="0 0 24 24"><path d="M5 13l4 4L19 7"/></svg><span>Quieres <b>proteger lo que tienes</b> sin entender de bolsa ni fiarte de quien te vende algo.</span></li>
+      <li><svg viewBox="0 0 24 24"><path d="M5 13l4 4L19 7"/></svg><span>Quieres que, si te pasa algo, <b>tu familia sepa dónde está todo</b>.</span></li>
+    </ul>
+    <p class="not"><b>No es para ti</b> si buscas hacerte rico rápido, si quieres que te diga en qué invertir o si esperas la pensión de tu país explicada punto por punto. Aquí no hay nada de eso.</p>
+  </section>
+
+  <hr class="rule">
+
+  <section class="block">
+    <div class="sec-h"><span class="tick"></span><h2>Lo que hay dentro</h2></div>
+    <p class="sec-intro">Veinticinco reglas en cuatro partes. Cada una cabe en una página: la regla, por qué funciona, la historia de alguien que la cumplió y qué hacer hoy.</p>
+
+    <div class="cats">
+      <div class="cat">
+        <div class="cat-h"><h3>Gastar menos sin vivir peor</h3><small>7 reglas</small></div>
+        <ol>
+          <li><span><b>La regla de Read:</b> gasta menos de lo que ganas. Siempre. Sin excepciones.</span></li>
+          <li><span><b>La cadena:</b> por qué una compra trae otra, y cómo cortarla.</span></li>
+          <li><span><b>Comprar barato sale caro:</b> lo que pagas dos veces.</span></li>
+          <li><span><b>El carro:</b> la decisión que más dinero se lleva sin que lo notes.</span></li>
+          <li><span><b>La casa que no necesitas:</b> metros que pagas y no usas.</span></li>
+          <li><span><b>Los gastos fantasma:</b> suscripciones, cuotas y seguros que ya no usas.</span></li>
+          <li><span><b>Los 30 días:</b> la espera que mata el 80&nbsp;% de las compras.</span></li>
+        </ol>
+      </div>
+      <div class="cat">
+        <div class="cat-h"><h3>Necesitar menos</h3><small>6 reglas</small></div>
+        <ol>
+          <li><span><b>Tu número:</b> cuánto necesitas al mes para vivir tranquilo.</span></li>
+          <li><span><b>Aparentar cuesta:</b> lo que pagas por que otros te vean.</span></li>
+          <li><span><b>La libreta de Slim:</b> dos columnas, una hoja, cada domingo.</span></li>
+          <li><span><b>El desayuno de Read:</b> la rutina barata que te hace feliz.</span></li>
+          <li><span><b>Qué cortar primero</b> (y qué no cortar nunca).</span></li>
+          <li><span><b>El mes de prueba:</b> vivir un mes con el presupuesto del retiro.</span></li>
+        </ol>
+      </div>
+      <div class="cat">
+        <div class="cat-h"><h3>Proteger lo que tienes</h3><small>6 reglas</small></div>
+        <ol>
+          <li><span><b>No vender en crisis:</b> la regla que hizo los 8 millones.</span></li>
+          <li><span><b>Deudas:</b> cuáles pagar primero y cuáles nunca contraer después de los 50.</span></li>
+          <li><span><b>El colchón:</b> cuántos meses guardar y dónde tenerlos.</span></li>
+          <li><span><b>Salud:</b> el gasto que rompe más retiros que ningún otro.</span></li>
+          <li><span><b>Las llamadas:</b> cómo te van a intentar estafar y cómo cuelgas.</span></li>
+          <li><span><b>No poner todo en el mismo sitio:</b> principios, no productos.</span></li>
+        </ol>
+      </div>
+      <div class="cat">
+        <div class="cat-h"><h3>Dejarlo todo atado</h3><small>6 reglas</small></div>
+        <ol>
+          <li><span><b>La carpeta «si me pasa algo»:</b> qué va dentro y quién sabe dónde está.</span></li>
+          <li><span><b>Testamento y beneficiarios:</b> lo básico, en una tarde.</span></li>
+          <li><span><b>Tu casa:</b> quedarte, vender o rentar.</span></li>
+          <li><span><b>Hijos adultos:</b> ayudar sin hundirte.</span></li>
+          <li><span><b>El retiro de dos:</b> cómo hablarlo con tu pareja sin discutir.</span></li>
+          <li><span><b>El primer año:</b> qué hacer cuando ya no hay que ir a trabajar (el de Read duró uno).</span></li>
+        </ol>
+      </div>
+    </div>
+
+    <div class="sec-h" style="margin-top:34px"><span class="tick"></span><h2>Las hojas</h2></div>
+    <p class="sec-intro">Para imprimir y llenar a lápiz, como la libreta de Slim. Una hoja por decisión. Entre ellas:</p>
+    <div class="sheets">
+      <div class="sheet-it">Tu retiro en una hoja<small>Los 4 números y el hueco</small></div>
+      <div class="sheet-it">La libreta de 30 días<small>Lo que entra, lo que sale</small></div>
+      <div class="sheet-it">Los 3 recortes<small>Qué cortas este mes y cuánto es</small></div>
+      <div class="sheet-it">Mapa de deudas<small>Cuál pagar primero</small></div>
+      <div class="sheet-it">Inventario de lo que tengo<small>Cuentas, casa, seguros, papeles</small></div>
+      <div class="sheet-it">El colchón<small>Cuántos meses, dónde</small></div>
+      <div class="sheet-it">Carpeta «si me pasa algo»<small>Qué va dentro, quién lo sabe</small></div>
+      <div class="sheet-it">Un mes de retiro<small>El presupuesto de prueba</small></div>
+    </div>
+
+    <div class="bonus">
+      <p class="tag">Bono incluido</p>
+      <h3>Ricos que gastan poco: las historias completas</h3>
+      <p>Warren Buffett, Carlos Slim y Ronald Read con calma, sin el límite de un vídeo: qué hicieron exactamente, qué no hicieron y de dónde sale cada dato. Con las fuentes, para que no me creas a mí.</p>
+    </div>
+  </section>
+
+  <hr class="rule">
+
+  <section class="block">
+    <div class="sec-h"><span class="tick"></span><h2>Sin la guía y con la guía</h2></div>
+    <div class="cmp-wrap">
+      <table class="cmp">
+        <thead><tr><th></th><th>Sin la guía</th><th class="si">Con la guía</th></tr></thead>
+        <tbody>
+          <tr><td>Tu número</td><td>«Ya veremos.» Una sensación, no una cifra.</td><td class="si">Lo sabes. Está escrito a lápiz en una hoja.</td></tr>
+          <tr><td>Los gastos</td><td>Recortas a lo loco cuando hay susto y vuelves a lo mismo.</td><td class="si">Cortas primero lo que no te hace feliz. Y ya no vuelve.</td></tr>
+          <tr><td>Las crisis</td><td>Vendes cuando cae, compras cuando sube, y pierdes las dos veces.</td><td class="si">Tienes una regla y la cumples. Como Read, sesenta años.</td></tr>
+          <tr><td>Los papeles</td><td>Repartidos por cajones, cuentas y correos que solo tú conoces.</td><td class="si">En una carpeta. Tu familia sabe dónde está.</td></tr>
+          <tr><td>La cabeza</td><td>Un miedo de fondo que no se va.</td><td class="si">Un plan. Y la tranquilidad de haberlo hecho.</td></tr>
+        </tbody>
+      </table>
+    </div>
+  </section>
+
+  <hr class="rule">
+
+  <section class="block">
+    <div class="sec-h"><span class="tick"></span><h2>Quién está detrás</h2></div>
+    <div class="author">
+      <p>Soy la persona detrás de <strong>@MenosCosasMásDinero</strong>. Cada semana cuento en YouTube la historia de alguien que se hizo rico gastando poco: el inversionista que sigue viviendo en la casa que compró en 1958, el empresario que hace sus cuentas a lápiz, el mecánico que murió con 8 millones sin que nadie lo supiera.</p>
+      <p>Antes de eso trabajé en una conocida gestora de patrimonio. Allí aprendí lo que no sale en los libros: <strong>las preocupaciones que traían nuestros clientes</strong>, lo sensible que es todo lo que tiene que ver con el dinero y la pregunta que les rondaba la cabeza a todos, tuvieran mucho o poco, cuando invertían o cuando por fin conseguían ahorrar: <em>«¿Podré vivir bien?»</em></p>
+      <p>No doy asesoría financiera ni vendo productos de nadie. Y después de años viendo dinero ajeno de cerca llegué a la misma conclusión que ellos tres: <strong>la tranquilidad no está en ganar más, está en necesitar menos.</strong> Esta guía es todo lo que aprendí, de los clientes y de esas historias, ordenado para que lo uses.</p>
+      <div class="stats">
+        <div class="stat"><b>Historias reales</b><span>Con nombre, fecha y fuente. Nada inventado.</span></div>
+        <div class="stat"><b>Reglas universales</b><span>Sirven en cualquier país y en cualquier moneda.</span></div>
+        <div class="stat"><b>Nadie me paga</b><span>Ni bancos, ni brókers, ni seguros. Solo tú, una vez.</span></div>
+      </div>
+    </div>
+  </section>
+
+  <hr class="rule">
+
+  <section class="block">
+    <div class="sec-h"><span class="tick"></span><h2>Preguntas</h2></div>
+    <div class="faq">
+      <details><summary>¿Sirve en mi país?</summary><p>Sí. La guía no explica la pensión de ningún país ni depende de ninguna ley: son reglas sobre cómo gastas, cuánto necesitas y cómo lo proteges. Las cifras las pones tú, en tu moneda.</p></details>
+      <details><summary>¿Me dices en qué invertir?</summary><p>No. Aquí no se recomienda ninguna acción, banco, bróker ni producto. Hay principios (no vender en crisis, no poner todo en el mismo sitio, tener un colchón), y cada uno decide con su situación. Es educación financiera, no asesoría.</p></details>
+      <details><summary>¿Qué recibo exactamente?</summary><p>Un PDF con las 25 reglas y las historias completas, y las hojas en otro PDF listo para imprimir. Los descargas al momento, nada más pagar, y te llegan también por correo.</p></details>
+      <details><summary>¿Cómo pago y en qué moneda?</summary><p>Con tarjeta o PayPal, en una plataforma de pago segura. El precio está en dólares; tu banco lo convierte a tu moneda al cambio del día.</p></details>
+      <details><summary>¿Y si la compro y no me sirve?</summary><p>Me escribes dentro de los 14 días siguientes y te devuelvo el dinero. Sin preguntas.</p></details>
+      <details><summary>¿Necesito tener ahorros ya?</summary><p>No. La guía empieza por lo que gastas y lo que necesitas, no por lo que tienes. De hecho, cuanto menos tengas ahorrado, más te sirve la primera parte.</p></details>
+      <details><summary>¿Es solo para mayores de 45?</summary><p>Está pensada para quien ya ve el retiro en el horizonte. Pero las reglas son las mismas a los 35: solo que a los 35 tienes más años para que jueguen a tu favor.</p></details>
+      <details><summary>¿Habrá actualizaciones?</summary><p>Sí, y gratis. Cuando añada reglas u hojas, recibes la versión nueva por el mismo correo. Pagas una vez.</p></details>
+    </div>
+  </section>
+
+  <section class="block" style="margin-top:30px">
+    <div class="final">
+      <h2>Invierte en tu tranquilidad</h2>
+      <p>Lo que cuesta esta guía se te va cada mes en algo que no recuerdas. Esto lo vas a recordar: el día que supiste tu número.</p>
+      <a class="cta js-buy" href="#precio">
+        <span class="js-buy-txt">Quiero la guía</span>
+        <svg viewBox="0 0 24 24"><path d="M5 12h14M13 6l6 6-6 6"/></svg>
+      </a>
+      <span class="cta-note"><b class="js-precio-txt">12 dólares</b> · pago único · devolución en 14 días</span>
+    </div>
+    <p class="fine" style="text-align:center">Contenido de educación financiera, no asesoramiento. Aquí no se recomienda ninguna acción, bróker, banco ni producto: cada uno decide con su situación.</p>
+  </section>
+
+</div>
+
+<footer>
+  <div class="wrap foot-in">
+    <p class="foot-mark">Menos cosas. <span>Más dinero.</span></p>
+    <p class="foot-txt">¿Todavía no? Empieza por lo gratis: la hoja de tu retiro y la guía para cortar las compras en cadena.</p>
+    <a class="yt" href="https://www.youtube.com/@MenosCosasMasDinero" target="_blank" rel="noopener">
+      <svg viewBox="0 0 24 24"><path d="M23 12s0-3.8-.5-5.6a2.9 2.9 0 0 0-2-2C18.7 4 12 4 12 4s-6.7 0-8.5.4a2.9 2.9 0 0 0-2 2C1 8.2 1 12 1 12s0 3.8.5 5.6a2.9 2.9 0 0 0 2 2C5.3 20 12 20 12 20s6.7 0 8.5-.4a2.9 2.9 0 0 0 2-2C23 15.8 23 12 23 12z"/><path class="ytbg" d="M9.75 15.5v-7l6 3.5-6 3.5z"/></svg>
+      Ver el canal
+    </a>
+    <p class="foot-fine">Guías gratis: <a href="/retiro/">Tu retiro en una hoja</a> · <a href="/cadena/">Corta las compras en cadena</a> · <a href="/comunidad/">Comunidad</a> · <a href="/privacidad/">Privacidad</a> · @MenosCosasMásDinero</p>
+  </div>
+</footer>
+
+<script>
+(function(){
+  // ===== AJUSTES =====
+  var CHECKOUT_URL = "";   // pega aquí el enlace de pago (Gumroad / Hotmart / Stripe Payment Link)
+  var PRECIO       = "12"; // en dólares, solo el número
+  // ===================
+
+  var hay = CHECKOUT_URL.trim() !== "";
+  document.querySelectorAll(".js-precio").forEach(function(el){ el.textContent = PRECIO; });
+  document.querySelectorAll(".js-precio-txt").forEach(function(el){ el.textContent = PRECIO + " dólares"; });
+  document.querySelectorAll(".js-buy").forEach(function(a){
+    if(hay){
+      a.href = CHECKOUT_URL; a.target = "_blank"; a.rel = "noopener";
+    } else {
+      // Sin enlace de pago todavía: el botón lleva a la lista de correo para avisar cuando salga
+      a.href = "/comunidad/?origen=retiro-tranquilo";
+      var t = a.querySelector(".js-buy-txt"); if(t) t.textContent = "Avísame cuando salga";
+    }
+  });
+  if(!hay){
+    document.querySelectorAll(".cta-note").forEach(function(el){
+      el.innerHTML = "<b>" + PRECIO + " dólares</b> · pago único · muy pronto";
+    });
+  }
+})();
+</script>
+
+</body>
+</html>
