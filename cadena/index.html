@@ -157,9 +157,9 @@
   }
   .chain .link{
     flex:1 1 0;min-width:0;display:flex;flex-direction:column;align-items:center;text-align:center;gap:6px;
-    padding:8px 4px;border-radius:12px;background:var(--panel);border:1px solid var(--mint-line);
+    padding:6px 6px 8px;border-radius:12px;background:var(--panel);border:1px solid var(--mint-line);
   }
-  .chain .link .pic{font-size:34px;line-height:1}
+  .chain .link .pic{display:block;width:100%;max-width:120px;aspect-ratio:1;height:auto;object-fit:cover;border-radius:10px}
   .chain .link .lbl{font-size:12.5px;font-weight:500;color:var(--ink);line-height:1.25;text-wrap:balance}
   .chain .link.first{background:var(--accent);border-color:var(--accent)}
   .chain .link.first .lbl{color:#fff;font-weight:600}
@@ -347,6 +347,8 @@
   nav.guias a:hover{border-color:var(--accent);color:var(--ink)}
   nav.guias a[aria-current="page"]{background:var(--accent);border-color:var(--accent);color:#fff}
   nav.guias a:focus-visible{outline:2px solid var(--accent);outline-offset:2px}
+  nav.guias a.yt{background:#FF0000;border-color:#FF0000;color:#fff;font-weight:600}
+  nav.guias a.yt:hover{background:#D90000;border-color:#D90000;color:#fff}
   .wordmark a{color:inherit;text-decoration:none}
 </style>
 <!-- Contador de visitas (GoatCounter: sin cookies, sin datos personales) -->
@@ -368,7 +370,7 @@
     <a href="/retiro/"><span aria-hidden="true">📄</span>Tu retiro en una hoja</a>
     <a href="/retiro-tranquilo/"><span aria-hidden="true">🌿</span>El retiro tranquilo</a>
     <a href="/comunidad/"><span aria-hidden="true">🤝</span>Comunidad</a>
-    <a href="https://www.youtube.com/@MenosCosasMasDinero" target="_blank" rel="noopener"><span aria-hidden="true">▶️</span>Canal de YouTube</a>
+    <a class="yt" href="https://www.youtube.com/@MenosCosasMasDinero" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" width="16" height="16" aria-hidden="true" style="flex:none"><path fill="#fff" d="M23 12s0-3.8-.5-5.6a2.9 2.9 0 0 0-2-2C18.7 4 12 4 12 4s-6.7 0-8.5.4a2.9 2.9 0 0 0-2 2C1 8.2 1 12 1 12s0 3.8.5 5.6a2.9 2.9 0 0 0 2 2C5.3 20 12 20 12 20s6.7 0 8.5-.4a2.9 2.9 0 0 0 2-2C23 15.8 23 12 23 12z"/><path fill="#FF0000" d="M9.75 15.5v-7l6 3.5-6 3.5z"/></svg>Canal de YouTube</a>
   </div>
 </nav>
 
@@ -402,19 +404,19 @@
     <p>Pasa con cualquier cosa y en cualquier país. Mira si te suena:</p>
     <div class="chains">
       <div class="chain">
-        <span class="link first"><span class="pic" aria-hidden="true">📱</span><span class="lbl">Teléfono nuevo</span></span><span class="arw">→</span>
-        <span class="link"><span class="pic" aria-hidden="true">🛡️</span><span class="lbl">Funda</span></span><span class="arw">→</span>
-        <span class="link"><span class="pic" aria-hidden="true">🎧</span><span class="lbl">Audífonos</span></span>
+        <span class="link first"><img class="pic" src="img/telefono.jpg" alt="" width="400" height="400" loading="lazy"><span class="lbl">Teléfono nuevo</span></span><span class="arw">→</span>
+        <span class="link"><img class="pic" src="img/funda.jpg" alt="" width="400" height="400" loading="lazy"><span class="lbl">Funda</span></span><span class="arw">→</span>
+        <span class="link"><img class="pic" src="img/audifonos.jpg" alt="" width="400" height="400" loading="lazy"><span class="lbl">Audífonos</span></span>
       </div>
       <div class="chain">
-        <span class="link first"><span class="pic" aria-hidden="true">🛋️</span><span class="lbl">Sofá nuevo</span></span><span class="arw">→</span>
-        <span class="link"><span class="pic" aria-hidden="true">🪟</span><span class="lbl">Cortinas</span></span><span class="arw">→</span>
-        <span class="link"><span class="pic" aria-hidden="true">💡</span><span class="lbl">Lámpara</span></span>
+        <span class="link first"><img class="pic" src="img/sofa.jpg" alt="" width="400" height="400" loading="lazy"><span class="lbl">Sofá nuevo</span></span><span class="arw">→</span>
+        <span class="link"><img class="pic" src="img/cortinas.jpg" alt="" width="400" height="400" loading="lazy"><span class="lbl">Cortinas</span></span><span class="arw">→</span>
+        <span class="link"><img class="pic" src="img/lampara.jpg" alt="" width="400" height="400" loading="lazy"><span class="lbl">Lámpara</span></span>
       </div>
       <div class="chain">
-        <span class="link first"><span class="pic" aria-hidden="true">🚗</span><span class="lbl">Carro nuevo</span></span><span class="arw">→</span>
-        <span class="link"><span class="pic" aria-hidden="true">📋</span><span class="lbl">Seguro más caro</span></span><span class="arw">→</span>
-        <span class="link"><span class="pic" aria-hidden="true">🛞</span><span class="lbl">Llantas, lavados</span></span>
+        <span class="link first"><img class="pic" src="img/carro.jpg" alt="" width="400" height="400" loading="lazy"><span class="lbl">Carro nuevo</span></span><span class="arw">→</span>
+        <span class="link"><img class="pic" src="img/seguro.jpg" alt="" width="400" height="400" loading="lazy"><span class="lbl">Seguro más caro</span></span><span class="arw">→</span>
+        <span class="link"><img class="pic" src="img/llantas.jpg" alt="" width="400" height="400" loading="lazy"><span class="lbl">Llantas, lavados</span></span>
       </div>
     </div>
     <p style="margin-bottom:0">Eso es una <strong>compra en cadena</strong>. Y lo peor no es la primera compra: es que las demás <strong>ni siquiera las decides</strong>. Vienen solas.</p>
