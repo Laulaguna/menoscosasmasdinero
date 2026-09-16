@@ -112,7 +112,7 @@
   .rule{height:1px;background:var(--line);border:0;margin:40px 0}
 
   .sec-h{display:flex;align-items:center;gap:14px;margin:0 0 18px}
-  .sec-h .tick{width:26px;height:3px;border-radius:2px;background:var(--accent);flex:none}
+  .sec-h .sico{font-size:26px;line-height:1;flex:none}
   .sec-h h2{font-family:"Fraunces",Georgia,serif;font-weight:600;font-size:clamp(23px,6vw,28px);letter-spacing:-.01em;margin:0;line-height:1.15}
 
   p{margin:0 0 18px}
@@ -296,7 +296,7 @@
   <hr class="rule">
 
   <section class="body block">
-    <div class="sec-h"><span class="tick"></span><h2>La libreta de un niño de 12 años</h2></div>
+    <div class="sec-h"><span class="sico" aria-hidden="true">📓</span><h2>La libreta de un niño de 12 años</h2></div>
     <p>Carlos Slim tiene más de cien mil millones de dólares y <strong>no usa computadora</strong>. Hace sus cuentas a lápiz. Su secreto empezó a los doce años: su padre le dio una libreta con dos columnas, <strong>lo que entra</strong> y <strong>lo que sale</strong>, y la revisaban juntos cada semana. Le pagaba por llevarla sin un solo tachón.</p>
     <p>Su padre murió un año después. Él nunca dejó la libreta. Hoy dirige un imperio con la misma regla: toda la información importante <strong>tiene que caber en una hoja de papel</strong>.</p>
 
@@ -316,8 +316,8 @@
   <hr class="rule">
 
   <section class="block">
-    <div class="sec-h"><span class="tick"></span><h2>La hoja</h2></div>
-    <p class="tool-intro">Escribe a lápiz, sin precisión de contador: la cuenta gorda basta. Sirve en cualquier país y en cualquier moneda, porque no depende de ninguna pensión: depende de ti. <strong style="color:var(--ink-soft);font-weight:600">Se guarda solo en este teléfono.</strong></p>
+    <div class="sec-h"><span class="sico" aria-hidden="true">📄</span><h2>La hoja</h2></div>
+    <p class="tool-intro">Escribe a lápiz, sin precisión de contador: la cuenta gorda basta. Sirve en cualquier país y en cualquier moneda, porque no depende de ninguna pensión: depende de ti. <strong style="color:var(--ink-soft);font-weight:600">Lo que escribas se guarda solo en este dispositivo; nadie más lo ve.</strong></p>
 
     <div class="sheet">
       <p class="sheet-title">Mi retiro <small>una sola hoja</small></p>
@@ -359,7 +359,7 @@
   <hr class="rule">
 
   <section class="block">
-    <div class="sec-h"><span class="tick"></span><h2>Los 3 recortes de hoy</h2></div>
+    <div class="sec-h"><span class="sico" aria-hidden="true">✂️</span><h2>Los 3 recortes de hoy</h2></div>
     <p class="tool-intro">El hueco no se cierra ganando más: se cierra <strong style="color:var(--ink-soft);font-weight:600">necesitando menos</strong>. Apunta tres gastos de este mes que puedes cortar sin que tu vida empeore, y cuánto son.</p>
     <div class="cuts" id="cuts"></div>
     <div class="cuts-total"><span>Ya cerré de mi hueco:</span><b id="cutsTotal">0</b></div>
@@ -379,8 +379,8 @@
   </section>
 
   <div class="share">
-    <h3>Pásasela a quien la necesite</h3>
-    <p>Alguien que conoces tiene miedo del retiro porque no lo ha puesto en una hoja. Mándasela.</p>
+    <h3>¿Tienes un familiar o un amigo que necesita organizarse mejor?</h3>
+    <p>Compárteselo. Seguro que le ayuda.</p>
     <div class="share-btns">
       <a class="sbtn wa js-wa" href="#" target="_blank" rel="noopener">
         <svg viewBox="0 0 24 24"><path d="M12.04 2C6.58 2 2.13 6.45 2.13 11.91c0 1.75.46 3.45 1.32 4.95L2 22l5.25-1.38a9.9 9.9 0 0 0 4.79 1.22h.01c5.46 0 9.9-4.45 9.9-9.91 0-2.65-1.03-5.14-2.9-7.01A9.82 9.82 0 0 0 12.04 2zm5.8 14.13c-.24.68-1.42 1.32-1.95 1.37-.5.05-.96.24-3.23-.67-2.72-1.07-4.44-3.85-4.57-4.03-.13-.18-1.09-1.45-1.09-2.77s.69-1.96.94-2.23c.24-.27.53-.34.71-.34.18 0 .35 0 .5.01.16.01.38-.06.59.45.24.58.81 2 .88 2.14.07.14.12.31.02.49-.09.18-.14.29-.27.45-.14.16-.29.36-.41.48-.14.14-.28.29-.12.56.16.27.71 1.17 1.53 1.9 1.05.94 1.94 1.23 2.21 1.37.27.14.43.12.59-.07.16-.18.68-.79.86-1.06.18-.27.36-.22.61-.13.24.09 1.55.73 1.82.86.27.14.45.2.51.31.07.11.07.64-.17 1.31z"/></svg>
@@ -403,7 +403,7 @@
       <svg viewBox="0 0 24 24"><path d="M23 12s0-3.8-.5-5.6a2.9 2.9 0 0 0-2-2C18.7 4 12 4 12 4s-6.7 0-8.5.4a2.9 2.9 0 0 0-2 2C1 8.2 1 12 1 12s0 3.8.5 5.6a2.9 2.9 0 0 0 2 2C5.3 20 12 20 12 20s6.7 0 8.5-.4a2.9 2.9 0 0 0 2-2C23 15.8 23 12 23 12z"/><path class="ytbg" d="M9.75 15.5v-7l6 3.5-6 3.5z"/></svg>
       Ver el canal
     </a>
-    <p class="foot-fine">Comenta la palabra <b>RETIRO</b> en cualquier vídeo del canal y te digo dónde tienes esta hoja · También tienes la guía <a href="/cadena/">Corta las compras en cadena</a> · @MenosCosasMásDinero</p>
+    <p class="foot-fine">También tienes la guía <a href="/cadena/">Corta las compras en cadena</a> · @MenosCosasMásDinero</p>
   </div>
 </footer>
 

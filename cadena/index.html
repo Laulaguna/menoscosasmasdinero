@@ -132,7 +132,7 @@
   .sec-h{
     display:flex;align-items:center;gap:14px;margin:0 0 18px;
   }
-  .sec-h .tick{width:26px;height:3px;border-radius:2px;background:var(--accent);flex:none}
+  .sec-h .sico{font-size:26px;line-height:1;flex:none}
   .sec-h h2{
     font-family:"Fraunces",Georgia,serif;font-weight:600;
     font-size:clamp(23px,6vw,28px);letter-spacing:-.01em;margin:0;line-height:1.15;
@@ -149,18 +149,21 @@
     font-size:19px;line-height:1.45;color:var(--ink);
   }
 
+  /* Cadenas con imágenes: cada eslabón es una tarjeta con su icono grande */
+  .chains{display:grid;gap:10px;margin:8px 0 22px}
   .chain{
-    display:flex;flex-wrap:wrap;gap:8px 6px;align-items:center;
-    margin:8px 0 22px;
+    display:flex;align-items:stretch;gap:4px;
+    background:var(--mint);border:1px solid var(--mint-line);border-radius:16px;padding:10px 8px;
   }
-  .chain .chip{
-    font-size:14px;font-weight:500;
-    padding:7px 13px;border-radius:100px;
-    background:var(--mint);border:1px solid var(--mint-line);color:var(--ink);
-    white-space:nowrap;
+  .chain .link{
+    flex:1 1 0;min-width:0;display:flex;flex-direction:column;align-items:center;text-align:center;gap:6px;
+    padding:8px 4px;border-radius:12px;background:var(--panel);border:1px solid var(--mint-line);
   }
-  .chain .arw{color:var(--accent);font-weight:600;font-size:15px}
-  .chain .brk{flex-basis:100%;height:0}
+  .chain .link .pic{font-size:34px;line-height:1}
+  .chain .link .lbl{font-size:12.5px;font-weight:500;color:var(--ink);line-height:1.25;text-wrap:balance}
+  .chain .link.first{background:var(--accent);border-color:var(--accent)}
+  .chain .link.first .lbl{color:#fff;font-weight:600}
+  .chain .arw{align-self:center;color:var(--accent);font-weight:600;font-size:18px;flex:none}
 
   .rule-card{
     background:var(--accent);color:#fff;
@@ -374,7 +377,7 @@
   <div class="hero">
     <span class="eyebrow">Guía gratis</span>
     <h1>Corta las compras en cadena</h1>
-    <p class="lede">Por qué <em>una compra nunca viene sola</em> — y las tres preguntas que frenan la cadena antes de que abras la cartera.</p>
+    <p class="lede">Por qué <em>una compra nunca viene sola</em>, y las tres preguntas que frenan la cadena antes de que abras la cartera.</p>
     <div class="share-top">
       <span class="st-lbl">Compártela:</span>
       <a class="sbtn-sm wa js-wa" target="_blank" rel="noopener" href="#">
@@ -391,24 +394,28 @@
   <hr class="rule">
 
   <section class="body block">
-    <div class="sec-h"><span class="tick"></span><h2>Una compra nunca viene sola</h2></div>
-    <p>Compras algo nuevo. Está bien, te lo has ganado. Pero al lado de lo nuevo, lo que ya tenías <strong>de repente parece viejo</strong>. Y lo cambias. Y entonces lo de al lado tampoco pega. Y lo cambias también. <span class="hl">Al final no pagaste una cosa: pagaste diez.</span></p>
+    <div class="sec-h"><span class="sico" aria-hidden="true">🔗</span><h2>Una compra nunca viene sola</h2></div>
+    <p>Compras algo nuevo. Está bien, te lo has ganado. Pero al lado de lo nuevo, lo que ya tenías <strong>de repente parece viejo</strong>. Y lo cambias. Y entonces lo de al lado tampoco combina. Y lo cambias también. <span class="hl">Al final no pagaste una cosa: pagaste diez.</span></p>
 
     <blockquote>«No compras una cosa. Compras todo lo que viene detrás.»</blockquote>
 
     <p>Pasa con cualquier cosa y en cualquier país. Mira si te suena:</p>
-    <div class="chain">
-      <span class="chip">📱 Teléfono nuevo</span><span class="arw">→</span>
-      <span class="chip">funda</span><span class="arw">→</span>
-      <span class="chip">audífonos</span>
-      <span class="brk"></span>
-      <span class="chip">🛋️ Sofá nuevo</span><span class="arw">→</span>
-      <span class="chip">cortinas</span><span class="arw">→</span>
-      <span class="chip">lámpara</span>
-      <span class="brk"></span>
-      <span class="chip">🚗 Carro nuevo</span><span class="arw">→</span>
-      <span class="chip">seguro más caro</span><span class="arw">→</span>
-      <span class="chip">llantas, lavados</span>
+    <div class="chains">
+      <div class="chain">
+        <span class="link first"><span class="pic" aria-hidden="true">📱</span><span class="lbl">Teléfono nuevo</span></span><span class="arw">→</span>
+        <span class="link"><span class="pic" aria-hidden="true">🛡️</span><span class="lbl">Funda</span></span><span class="arw">→</span>
+        <span class="link"><span class="pic" aria-hidden="true">🎧</span><span class="lbl">Audífonos</span></span>
+      </div>
+      <div class="chain">
+        <span class="link first"><span class="pic" aria-hidden="true">🛋️</span><span class="lbl">Sofá nuevo</span></span><span class="arw">→</span>
+        <span class="link"><span class="pic" aria-hidden="true">🪟</span><span class="lbl">Cortinas</span></span><span class="arw">→</span>
+        <span class="link"><span class="pic" aria-hidden="true">💡</span><span class="lbl">Lámpara</span></span>
+      </div>
+      <div class="chain">
+        <span class="link first"><span class="pic" aria-hidden="true">🚗</span><span class="lbl">Carro nuevo</span></span><span class="arw">→</span>
+        <span class="link"><span class="pic" aria-hidden="true">📋</span><span class="lbl">Seguro más caro</span></span><span class="arw">→</span>
+        <span class="link"><span class="pic" aria-hidden="true">🛞</span><span class="lbl">Llantas, lavados</span></span>
+      </div>
     </div>
     <p style="margin-bottom:0">Eso es una <strong>compra en cadena</strong>. Y lo peor no es la primera compra: es que las demás <strong>ni siquiera las decides</strong>. Vienen solas.</p>
   </section>
@@ -424,13 +431,13 @@
   <hr class="rule">
 
   <section class="block">
-    <div class="sec-h"><span class="tick"></span><h2>Las 3 preguntas antes de comprar</h2></div>
-    <p class="tool-intro">Rellénalas la próxima vez que sientas el impulso. Si las tres te dan mala espina, ya sabes lo que toca: no comprar. <strong style="color:var(--ink-soft);font-weight:600">Se guarda solo en este teléfono.</strong></p>
+    <div class="sec-h"><span class="sico" aria-hidden="true">✋</span><h2>Las 3 preguntas antes de comprar</h2></div>
+    <p class="tool-intro">Rellénalas la próxima vez que sientas el impulso. Si las tres te dan mala espina, ya sabes lo que toca: no comprar. <strong style="color:var(--ink-soft);font-weight:600">Lo que escribas se guarda solo en este dispositivo; nadie más lo ve.</strong></p>
 
     <div class="q">
       <div class="q-top">
         <div class="q-num">1</div>
-        <div><div class="q-ttl">¿Qué OTRAS cosas voy a «necesitar» para que esto pegue?</div>
+        <div><div class="q-ttl">¿Qué OTRAS cosas voy a «necesitar» para que esto combine?</div>
         <div class="q-hint">Apúntalas. Esa es la cadena de verdad.</div></div>
       </div>
       <div class="q-body">
@@ -459,7 +466,7 @@
       <div class="q-body">
         <div class="choice">
           <label class="opt"><input type="radio" name="q3" value="si" data-save="q3"><span class="dot"></span>Sí, de verdad</label>
-          <label class="opt"><input type="radio" name="q3" value="no" data-save="q3"><span class="dot"></span>No — era el impulso</label>
+          <label class="opt"><input type="radio" name="q3" value="no" data-save="q3"><span class="dot"></span>No, era el impulso</label>
         </div>
       </div>
     </div>
@@ -478,8 +485,8 @@
   </section>
 
   <div class="share">
-    <h3>Pásasela a quien la necesite</h3>
-    <p>Alguien que conoces también compra en cadena. Mándasela.</p>
+    <h3>¿Tienes un familiar o un amigo que necesita organizarse mejor?</h3>
+    <p>Compárteselo. Seguro que le ayuda.</p>
     <div class="share-btns">
       <a class="sbtn wa js-wa" href="#" target="_blank" rel="noopener">
         <svg viewBox="0 0 24 24"><path d="M12.04 2C6.58 2 2.13 6.45 2.13 11.91c0 1.75.46 3.45 1.32 4.95L2 22l5.25-1.38a9.9 9.9 0 0 0 4.79 1.22h.01c5.46 0 9.9-4.45 9.9-9.91 0-2.65-1.03-5.14-2.9-7.01A9.82 9.82 0 0 0 12.04 2zm5.8 14.13c-.24.68-1.42 1.32-1.95 1.37-.5.05-.96.24-3.23-.67-2.72-1.07-4.44-3.85-4.57-4.03-.13-.18-1.09-1.45-1.09-2.77s.69-1.96.94-2.23c.24-.27.53-.34.71-.34.18 0 .35 0 .5.01.16.01.38-.06.59.45.24.58.81 2 .88 2.14.07.14.12.31.02.49-.09.18-.14.29-.27.45-.14.16-.29.36-.41.48-.14.14-.28.29-.12.56.16.27.71 1.17 1.53 1.9 1.05.94 1.94 1.23 2.21 1.37.27.14.43.12.59-.07.16-.18.68-.79.86-1.06.18-.27.36-.22.61-.13.24.09 1.55.73 1.82.86.27.14.45.2.51.31.07.11.07.64-.17 1.31z"/></svg>
@@ -502,7 +509,7 @@
       <svg viewBox="0 0 24 24"><path d="M23 12s0-3.8-.5-5.6a2.9 2.9 0 0 0-2-2C18.7 4 12 4 12 4s-6.7 0-8.5.4a2.9 2.9 0 0 0-2 2C1 8.2 1 12 1 12s0 3.8.5 5.6a2.9 2.9 0 0 0 2 2C5.3 20 12 20 12 20s6.7 0 8.5-.4a2.9 2.9 0 0 0 2-2C23 15.8 23 12 23 12z"/><path class="ytbg" d="M9.75 15.5v-7l6 3.5-6 3.5z"/></svg>
       Ver el canal
     </a>
-    <p class="foot-fine">Comenta la palabra <b>CADENA</b> en cualquier vídeo del canal y te digo dónde tienes esta guía · @MenosCosasMásDinero</p>
+    <p class="foot-fine">También tienes la guía <a href="/retiro/" style="color:inherit">Tu retiro en una hoja</a> · <a href="/comunidad/" style="color:inherit">Comunidad</a> · @MenosCosasMásDinero</p>
   </div>
 </footer>
 

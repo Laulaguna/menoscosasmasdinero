@@ -40,8 +40,24 @@
   .card small{color:var(--muted);font-size:14px}
   .card.main{background:var(--accent);border-color:var(--accent);color:#fff}
   .card.main small{color:rgba(255,255,255,.8)}
-  .foot{margin-top:44px;color:var(--muted);font-size:13.5px}
-  .foot b{color:var(--accent);letter-spacing:.04em}
+  /* Canal de YouTube: rojo característico de YouTube */
+  .card.yt{background:#FF0000;border-color:#FF0000;color:#fff}
+  .card.yt small{color:rgba(255,255,255,.85)}
+  .card.yt .ico{width:34px;height:34px;display:flex;align-items:center;justify-content:center}
+  .card.yt .ico svg{width:34px;height:34px;fill:#fff}
+  .card.yt .ico svg .play{fill:#FF0000}
+  .share-home{margin-top:40px;padding:22px 20px;border-radius:16px;background:var(--panel);border:1px solid var(--line);text-align:center}
+  .share-home p{margin:0 0 14px;color:var(--ink-soft);font-size:16px;line-height:1.5}
+  .share-home p b{display:block;font-family:"Fraunces",Georgia,serif;font-weight:600;font-size:20px;color:var(--ink);margin-bottom:4px;text-wrap:balance}
+  .share-btns{display:flex;gap:10px;justify-content:center;flex-wrap:wrap}
+  .sbtn{display:inline-flex;align-items:center;gap:8px;cursor:pointer;font-family:inherit;font-weight:600;font-size:15px;text-decoration:none;padding:11px 18px;border-radius:100px;border:1px solid transparent;transition:transform .15s}
+  .sbtn:hover{transform:translateY(-1px)}
+  .sbtn svg{width:18px;height:18px;flex:none}
+  .sbtn.wa{background:#25D366;color:#08331b}
+  .sbtn.wa svg{fill:#08331b}
+  .sbtn.more{background:var(--accent-soft);color:var(--accent-deep);border-color:var(--line)}
+  .sbtn.more svg{fill:var(--accent-deep)}
+  .foot{margin-top:28px;color:var(--muted);font-size:13.5px;text-align:center}
 
   /* Menú de guías (común a toda la web) */
   nav.guias{border-bottom:1px solid var(--line);background:var(--paper)}
@@ -81,12 +97,45 @@
       <span class="ico">📄</span>
       <span><b>Guía gratis: Tu retiro en una hoja</b><small>Los 4 números de tu jubilación + la libreta de 30 días de Carlos Slim</small></span>
     </a>
-    <a class="card" href="https://www.youtube.com/@MenosCosasMasDinero" target="_blank" rel="noopener">
-      <span class="ico">▶️</span>
-      <span><b>El canal en YouTube</b><small>@MenosCosasMásDinero</small></span>
+    <a class="card yt" href="https://www.youtube.com/@MenosCosasMasDinero" target="_blank" rel="noopener">
+      <span class="ico" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M23 12s0-3.8-.5-5.6a2.9 2.9 0 0 0-2-2C18.7 4 12 4 12 4s-6.7 0-8.5.4a2.9 2.9 0 0 0-2 2C1 8.2 1 12 1 12s0 3.8.5 5.6a2.9 2.9 0 0 0 2 2C5.3 20 12 20 12 20s6.7 0 8.5-.4a2.9 2.9 0 0 0 2-2C23 15.8 23 12 23 12z"/><path class="play" d="M9.75 15.5v-7l6 3.5-6 3.5z"/></svg></span>
+      <span><b>El canal en YouTube</b><small>@MenosCosasMásDinero · un vídeo corto cada semana</small></span>
     </a>
   </div>
-  <p class="foot">Comenta la palabra <b>CADENA</b> o <b>RETIRO</b> en cualquier vídeo y te digo dónde tienes cada guía.</p>
+
+  <div class="share-home">
+    <p><b>¿Tienes un familiar o un amigo que necesita organizarse mejor?</b>Compárteselo. Seguro que le ayuda.</p>
+    <div class="share-btns">
+      <a class="sbtn wa js-wa" href="#" target="_blank" rel="noopener">
+        <svg viewBox="0 0 24 24"><path d="M12.04 2C6.58 2 2.13 6.45 2.13 11.91c0 1.75.46 3.45 1.32 4.95L2 22l5.25-1.38a9.9 9.9 0 0 0 4.79 1.22h.01c5.46 0 9.9-4.45 9.9-9.91 0-2.65-1.03-5.14-2.9-7.01A9.82 9.82 0 0 0 12.04 2zm5.8 14.13c-.24.68-1.42 1.32-1.95 1.37-.5.05-.96.24-3.23-.67-2.72-1.07-4.44-3.85-4.57-4.03-.13-.18-1.09-1.45-1.09-2.77s.69-1.96.94-2.23c.24-.27.53-.34.71-.34.18 0 .35 0 .5.01.16.01.38-.06.59.45.24.58.81 2 .88 2.14.07.14.12.31.02.49-.09.18-.14.29-.27.45-.14.16-.29.36-.41.48-.14.14-.28.29-.12.56.16.27.71 1.17 1.53 1.9 1.05.94 1.94 1.23 2.21 1.37.27.14.43.12.59-.07.16-.18.68-.79.86-1.06.18-.27.36-.22.61-.13.24.09 1.55.73 1.82.86.27.14.45.2.51.31.07.11.07.64-.17 1.31z"/></svg>
+        Compartir por WhatsApp
+      </a>
+      <button class="sbtn more js-more" type="button">
+        <svg viewBox="0 0 24 24"><path d="M18 8a3 3 0 1 0-2.82-4H15a3 3 0 0 0 .18 1.09l-6.3 3.67a3 3 0 1 0 0 4.48l6.3 3.67A3 3 0 1 0 18 16a2.98 2.98 0 0 0-1.94.72l-6.3-3.67a3.02 3.02 0 0 0 0-2.1l6.3-3.67A2.98 2.98 0 0 0 18 8z"/></svg>
+        <span class="lbl">Otras apps · copiar enlace</span>
+      </button>
+    </div>
+  </div>
+  <p class="foot">@MenosCosasMásDinero · <a href="/comunidad/" style="color:inherit">Comunidad</a> · <a href="/privacidad/" style="color:inherit">Privacidad</a></p>
 </div>
+<script>
+(function(){
+  var URL="https://menoscosasmasdinero.com/";
+  var TXT="💰 Menos cosas, más dinero: finanzas personales sin humo, un vídeo corto cada semana y dos guías gratis.";
+  document.querySelectorAll(".js-wa").forEach(function(a){ a.href="https://wa.me/?text="+encodeURIComponent(TXT+" "+URL); });
+  function swap(btn,msg){ var l=btn.querySelector(".lbl"); if(!l) return; if(btn.dataset.orig===undefined) btn.dataset.orig=l.textContent; l.textContent=msg; setTimeout(function(){ l.textContent=btn.dataset.orig; },2400); }
+  function copyLink(btn){
+    var ok=function(){ swap(btn,"✓ Enlace copiado"); };
+    try{ if(navigator.clipboard&&navigator.clipboard.writeText){ navigator.clipboard.writeText(URL).then(ok,fb); return; } }catch(e){}
+    fb();
+    function fb(){ try{ var t=document.createElement("textarea"); t.value=URL; t.setAttribute("readonly",""); t.style.position="absolute"; t.style.left="-9999px"; document.body.appendChild(t); t.select(); document.execCommand("copy"); document.body.removeChild(t); ok(); }catch(e){ swap(btn,"Copia el enlace del navegador"); } }
+  }
+  document.querySelectorAll(".js-more").forEach(function(btn){
+    btn.addEventListener("click",function(){
+      if(navigator.share){ navigator.share({title:"Menos cosas, más dinero",text:TXT,url:URL}).catch(function(){}); } else { copyLink(btn); }
+    });
+  });
+})();
+</script>
 </body>
 </html>
