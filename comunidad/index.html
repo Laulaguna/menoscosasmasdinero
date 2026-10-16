@@ -63,6 +63,10 @@
   .legal{font-size:13px;color:var(--muted);margin-top:8px}
   .legal a{color:var(--muted)}
 
+  .cta{display:inline-block;background:var(--accent);color:#fff;font-weight:600;text-decoration:none;padding:12px 20px;border-radius:999px}
+  .cta:hover{background:var(--accent-deep)}
+  .signup{margin-top:18px}
+
   /* recursos */
   .links{display:grid;gap:12px;margin-top:8px}
   .card{display:flex;align-items:center;gap:16px;padding:18px 20px;border-radius:16px;text-decoration:none;color:var(--ink);background:var(--panel);border:1px solid var(--line);box-shadow:var(--shadow);transition:transform .15s}
@@ -121,7 +125,33 @@
   <h1>Llegar a los 65 con tranquilidad <span class="x">💚</span></h1>
 
   <p class="big"><b>Nunca es tarde para ordenar tu dinero.</b> <mark>Y es mucho más fácil cuando lo hacemos juntos.</mark></p>
-  <p>Al final de esta página te esperan <b>dos guías gratis</b> para empezar hoy mismo. Están abiertas, sin trucos: son para ti.</p>
+
+  <section class="signup" id="apuntarme">
+    <h3>👉 Quiero sumarme a la lista</h3>
+    <p class="quiet">Solo tu nombre y tu correo. Te toma 10 segundos.</p>
+    <iframe id="tally" data-tally-src="https://tally.so/embed/D4jX4p?alignLeft=1&hideTitle=1&transparentBackground=1&dynamicHeight=1" title="Apuntarme a la lista de Menos cosas, más dinero"></iframe>
+    <script>
+    // Procedencia: /comunidad/?origen=retiro-tranquilo → se pasa a Tally como campo oculto "origen"
+    (function(){
+      try{
+        var o=new URLSearchParams(location.search).get("origen")||"";
+        o=o.replace(/[^a-z0-9\-]/gi,"").slice(0,40);
+        if(!o) return;
+        var f=document.getElementById("tally");
+        f.setAttribute("data-tally-src", f.getAttribute("data-tally-src")+"&origen="+encodeURIComponent(o));
+        if(o==="retiro-tranquilo"){
+          document.querySelector("#apuntarme h3").textContent="👉 Avísame cuando salga «El retiro tranquilo»";
+          document.querySelector("#apuntarme .quiet").textContent="Te escribo el día que esté lista, y mientras tanto recibes las guías gratis.";
+          if(!location.hash) setTimeout(function(){ document.getElementById("apuntarme").scrollIntoView(); },300);
+        }
+      }catch(e){}
+    })();
+    </script>
+    <script async src="https://tally.so/widgets/embed.js"></script>
+    <p class="legal">Al inscribirte aceptas que guarde tu nombre y tu email para escribirte sobre las guías y la comunidad. Nada más. <a href="/privacidad/">Cómo trato tus datos</a>.</p>
+  </section>
+
+  <p>Más abajo te esperan <b>dos guías gratis</b> para empezar hoy mismo. Están abiertas, sin trucos: son para ti.</p>
   <p>Y si quieres ir un paso más allá:</p>
   <p>Si quieres saber <b>en qué se te va el dinero</b>, dejar de comprar por impulso y llegar al retiro <b>con calma</b> —sin volverte experto y sin dejar de disfrutar la vida—, estoy armando una <b>comunidad de personas que quieren lo mismo que tú</b>. Sin gurús, sin cursos carísimos, sin promesas mágicas. Lo mismo que ves en los vídeos, pero con más tiempo y en buena compañía.</p>
 
@@ -143,33 +173,10 @@
     <li>Te aviso de lo que vaya armando: sesiones en directo, retos de 7 días, herramientas.</li>
     <li>Tendrás <b>lugar prioritario y condiciones únicas</b> cuando abra la comunidad privada.</li>
   </ul>
-  <p>Solo tu nombre y tu correo. <b>Nada de grupos de WhatsApp</b>, nada de spam, y puedes darte de baja con un clic cuando quieras.</p>
+  <p><b>Nada de grupos de WhatsApp</b>, nada de spam, y puedes darte de baja con un clic cuando quieras.</p>
   <p>Cada pequeño paso cuenta. <b>Este puede ser el primero.</b> Te espero dentro.</p>
+  <p><a class="cta" href="#apuntarme">👉 Quiero sumarme a la lista</a></p>
 
-  <section class="signup" id="apuntarme">
-    <h3>👉 Quiero sumarme a la lista</h3>
-    <p class="quiet">Te toma 10 segundos.</p>
-    <iframe id="tally" data-tally-src="https://tally.so/embed/D4jX4p?alignLeft=1&hideTitle=1&transparentBackground=1&dynamicHeight=1" loading="lazy" title="Apuntarme a la lista de Menos cosas, más dinero"></iframe>
-    <script>
-    // Procedencia: /comunidad/?origen=retiro-tranquilo → se pasa a Tally como campo oculto "origen"
-    (function(){
-      try{
-        var o=new URLSearchParams(location.search).get("origen")||"";
-        o=o.replace(/[^a-z0-9\-]/gi,"").slice(0,40);
-        if(!o) return;
-        var f=document.getElementById("tally");
-        f.setAttribute("data-tally-src", f.getAttribute("data-tally-src")+"&origen="+encodeURIComponent(o));
-        if(o==="retiro-tranquilo"){
-          document.querySelector("#apuntarme h3").textContent="👉 Avísame cuando salga «El retiro tranquilo»";
-          document.querySelector("#apuntarme .quiet").textContent="Te escribo el día que esté lista, y mientras tanto recibes las guías gratis.";
-          if(!location.hash) setTimeout(function(){ document.getElementById("apuntarme").scrollIntoView(); },300);
-        }
-      }catch(e){}
-    })();
-    </script>
-    <script async src="https://tally.so/widgets/embed.js"></script>
-    <p class="legal">Al inscribirte aceptas que guarde tu nombre y tu email para escribirte sobre las guías y la comunidad. Nada más. <a href="/privacidad/">Cómo trato tus datos</a>.</p>
-  </section>
 
   <h2>Y las guías gratis, como te prometí</h2>
   <p class="quiet">Abiertas para todo el mundo, estés en la lista o no.</p>
